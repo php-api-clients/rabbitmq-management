@@ -12,22 +12,22 @@
   "require": {
     "php": "^7.0",
     "api-clients/foundation": "dev-master",
-    "api-clients/resource-test-utilities": "dev-master"
+    "api-clients/resource-test-utilities": "dev-master",
+    "api-clients/resource": "dev-feature-subscribable-resource-interface as dev-master",
+    "api-clients/transport": "dev-feature-request-processing as dev-master"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5.2.3",
-    "squizlabs/php_codesniffer": "^2.6",
     "api-clients/resource-generator": "dev-master",
-    "phake/phake": "^2.3"
+    "api-clients/test-utilities": "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "ApiClients\\RabbitMQ\\Management\\": "src/"
+      "ApiClients\\Client\\RabbitMQ\\Management\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "ApiClients\\Tests\\RabbitMQ\\Management\\": "tests/"
+      "ApiClients\\Tests\\Client\\RabbitMQ\\Management\\": "tests/"
     }
   }
 }
