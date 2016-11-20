@@ -1,0 +1,8 @@
+yaml_location: yaml
+api_settings: ApiClients\Client\RabbitMQ\Management\ApiSettings
+src:
+  path: src/Resource
+  namespace: ApiClients\Client\RabbitMQ\Management\Resource
+tests:
+  path: tests/Resource
+  namespace: ApiClients\Tests\Client\RabbitMQ\Management\Resource
