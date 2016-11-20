@@ -1,0 +1,35 @@
+class: Overview
+properties:
+  management_version: string
+  rates_mode: string
+  exchange_types:
+    type: array
+    annotations:
+      collection: Overview\ExchangeType
+  rabbitmq_version: string
+  cluster_name: string
+  erlang_version: string
+  erlang_full_version: string
+  message_stats:
+    type: Overview\MessageStats
+    annotations:
+      nested: Overview\MessageStats
+  queue_totals:
+    type: Overview\QueueTotals
+    annotations:
+      nested: Overview\QueueTotals
+  object_totals:
+    type: Overview\ObjectTotals
+    annotations:
+      nested: Overview\ObjectTotals
+  statistics_db_event_queue: int
+  node: string
+  statistics_db_node: string
+  listeners:
+    type: array
+    annotations:
+      collection: Overview\Listener
+  contexts:
+    type: array
+    annotations:
+      collection: Overview\Context
