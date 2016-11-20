@@ -1,0 +1,44 @@
+class: Connection
+properties:
+  recv_oct: int
+  send_oct: int
+  recv_oct_details:
+    type: Details
+    annotations:
+      nested: Details
+  send_oct_details:
+      type: Details
+      annotations:
+        nested: Details
+  recv_cnt: int
+  send_cnt: int
+  send_pend: int
+  state: string
+  channels: int
+  type: string
+  node: string
+  name: string
+  port: int
+  peer_port: int
+  host: string
+  peer_host: string
+  ssl: bool
+  peer_cert_subject: mixed
+  peer_cert_issuer: mixed
+  peer_cert_validity: mixed
+  auth_mechanism: string
+  ssl_protocol: mixed
+  ssl_key_exchange: mixed
+  ssl_cipher: mixed
+  ssl_hash: mixed
+  protocol: string
+  user: string
+  vhost: string
+  timeout: int
+  frame_max: int
+  channel_max: int
+  client_properties:
+    type: Connection\ClientProperties
+    annotations:
+      nested: Connection\ClientProperties
+  connected_at: int
