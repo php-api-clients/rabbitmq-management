@@ -1,0 +1,6 @@
+class: Overview\Listener
+properties:
+  node: string
+  protocol: string
+  ip_address: string
+  port: int
