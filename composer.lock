@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57094f7141453a7024c278792015be5a",
-    "content-hash": "39fa02b1fc0ac520e180aea6af394eaa",
+    "hash": "376b6e4cfa901e31a252442186842953",
+    "content-hash": "813294a95a74a56fa3ebbdfff1cd8e44",
     "packages": [
         {
             "name": "api-clients/command-bus",
@@ -430,16 +430,16 @@
         },
         {
             "name": "api-clients/transport",
-            "version": "dev-feature-request-processing",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/transport.git",
-                "reference": "10482f5b084963f5b56d4ad54d791a51c2e392af"
+                "reference": "65939beb85c8969a40ae191dbdf08d4ee4d2d849"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/transport/zipball/10482f5b084963f5b56d4ad54d791a51c2e392af",
-                "reference": "10482f5b084963f5b56d4ad54d791a51c2e392af",
+                "url": "https://api.github.com/repos/php-api-clients/transport/zipball/65939beb85c8969a40ae191dbdf08d4ee4d2d849",
+                "reference": "65939beb85c8969a40ae191dbdf08d4ee4d2d849",
                 "shasum": ""
             },
             "require": {
@@ -453,7 +453,9 @@
                 "container-interop/container-interop": "^1.1",
                 "daverandom/exceptional-json": "^1.0.1",
                 "doctrine/annotations": "^1.2",
+                "joshdifabio/composed": "^1.0",
                 "league/event": "^2.1",
+                "ocramius/package-versions": "^1.1",
                 "php": "^7.0",
                 "react/cache": "^0.4.1",
                 "react/promise": "^2.4",
@@ -474,6 +476,14 @@
                 "api-clients/resource-generator": "Easy wireframing of resources"
             },
             "type": "library",
+            "extra": {
+                "api-clients": {
+                    "command-bus": {
+                        "path": "src/CommandBus",
+                        "namespace": "ApiClients\\Foundation\\Transport\\CommandBus"
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "ApiClients\\Foundation\\Transport\\": "src/"
@@ -489,7 +499,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-11-13 08:25:09"
+            "time": "2016-11-20 01:35:26"
         },
         {
             "name": "clue/block-react",
@@ -1591,6 +1601,53 @@
                 "serializer"
             ],
             "time": "2016-01-12 11:39:06"
+        },
+        {
+            "name": "ocramius/package-versions",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/PackageVersions.git",
+                "reference": "4b2bfc8128db95b533303942b0d5b332bffa07c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/4b2bfc8128db95b533303942b0d5b332bffa07c6",
+                "reference": "4b2bfc8128db95b533303942b0d5b332bffa07c6",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.2.0",
+                "phpunit/phpunit": "^5.4.7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "time": "2016-07-25 07:13:56"
         },
         {
             "name": "padraic/humbug_get_contents",
@@ -4634,12 +4691,6 @@
             "alias_normalized": "9999999-dev",
             "version": "dev-feature-subscribable-resource-interface",
             "package": "api-clients/resource"
-        },
-        {
-            "alias": "dev-master",
-            "alias_normalized": "9999999-dev",
-            "version": "dev-feature-request-processing",
-            "package": "api-clients/transport"
         }
     ],
     "minimum-stability": "dev",

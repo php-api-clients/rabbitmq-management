@@ -14,7 +14,7 @@
     "api-clients/foundation": "dev-master",
     "api-clients/resource-test-utilities": "dev-master",
     "api-clients/resource": "dev-feature-subscribable-resource-interface as dev-master",
-    "api-clients/transport": "dev-feature-request-processing as dev-master"
+    "api-clients/transport": "dev-master"
   },
   "require-dev": {
     "api-clients/resource-generator": "dev-master",
