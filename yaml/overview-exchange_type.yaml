@@ -1,0 +1,5 @@
+class: Overview\ExchangeType
+properties:
+  name: string
+  description: string
+  enabled: bool
