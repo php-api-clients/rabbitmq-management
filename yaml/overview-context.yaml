@@ -1,0 +1,6 @@
+class: Overview\Context
+properties:
+  node: string
+  description: string
+  path: string
+  port: string
