@@ -1,0 +1,47 @@
+class: Queue
+properties:
+  messages: int
+  messages_details:
+    type: Details
+    annotations:
+      nested: Details
+  messages_ready: int
+  messages_ready_details:
+    type: Details
+    annotations:
+      nested: Details
+  messages_unacknowledged: int
+  messages_unacknowledged_details:
+    type: Details
+    annotations:
+      nested: Details
+  idle_since: DateTime
+  consumer_utilisation: mixed
+  policy: mixed
+  exclusive_consumer_tag: mixed
+  consumers: int
+  recoverable_slaves: mixed
+  state: string
+  messages_ram: int
+  messages_ready_ram: int
+  messages_unacknowledged_ram: int
+  messages_persistent: int
+  message_bytes: int
+  message_bytes_ready: int
+  message_bytes_unacknowledged: int
+  message_bytes_ram: int
+  message_bytes_persistent: int
+  head_message_timestamp: DateTime
+  disk_reads: int
+  disk_writes: int
+  backing_queue_status:
+    type: Queue\BackingQueueStatus
+    annotations:
+      nested: Queue\BackingQueueStatus
+  name: string
+  vhost: string
+  durable: bool
+  auto_delete: bool
+  exclusive: bool
+  arguments: array
+  node: string
