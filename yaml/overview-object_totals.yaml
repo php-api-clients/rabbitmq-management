@@ -1,0 +1,7 @@
+class: Overview\ObjectTotals
+properties:
+  consumers: int
+  queues: int
+  exchanges: int
+  connections: int
+  channels: int
