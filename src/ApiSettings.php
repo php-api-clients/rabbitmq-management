@@ -30,8 +30,12 @@ final class ApiSettings
         ],
     ];
 
-    public static function getOptions(string $baseUrl, string $username, string $password, string $namespaceSuffix): array
-    {
+    public static function getOptions(
+        string $baseUrl,
+        string $username,
+        string $password,
+        string $namespaceSuffix
+    ): array {
         $url = parse_url($baseUrl);
         $auth = 'Basic ' . base64_encode($username . ':' . $password);
 
