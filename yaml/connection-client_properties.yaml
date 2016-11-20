@@ -1,0 +1,13 @@
+class: Connection\ClientProperties
+nested:
+  capabilities: Connection\ClientProperties\Capabilities
+properties:
+  product: string
+  version: string
+  platform: string
+  copyright: string
+  information: string
+  capabilities:
+    type: Connection\ClientProperties\Capabilities
+    annotations:
+      nested: Connection\ClientProperties\Capabilities
