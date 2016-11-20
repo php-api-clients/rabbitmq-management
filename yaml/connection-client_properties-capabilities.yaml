@@ -1,0 +1,14 @@
+class: Connection\ClientProperties\Capabilities
+properties:
+  publisher_confirms: bool
+  exchange_exchange_bindings: bool
+  basic.nack:
+    type: bool
+    annotations:
+      rename: basic_nack
+  consumer_cancel_notify: bool
+  connection.blocked:
+    type: bool
+    annotations:
+      rename: connection_blocked
+  authentication_failure_close: bool
