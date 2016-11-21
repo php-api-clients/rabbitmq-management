@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "376b6e4cfa901e31a252442186842953",
-    "content-hash": "813294a95a74a56fa3ebbdfff1cd8e44",
+    "hash": "35ce8fdcbc20cd2c07d31d8bb59423a8",
+    "content-hash": "bf5a0098dc10f4ab6d324f66b68706d4",
     "packages": [
         {
             "name": "api-clients/command-bus",
@@ -256,16 +256,16 @@
         },
         {
             "name": "api-clients/resource",
-            "version": "dev-feature-subscribable-resource-interface",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/resource.git",
-                "reference": "807f2c5ac59b04dfc37c9652467527ed3389e293"
+                "reference": "b06a42c650e26ae8fe8a0a9ec7705d2613503788"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/resource/zipball/807f2c5ac59b04dfc37c9652467527ed3389e293",
-                "reference": "807f2c5ac59b04dfc37c9652467527ed3389e293",
+                "url": "https://api.github.com/repos/php-api-clients/resource/zipball/b06a42c650e26ae8fe8a0a9ec7705d2613503788",
+                "reference": "b06a42c650e26ae8fe8a0a9ec7705d2613503788",
                 "shasum": ""
             },
             "require": {
@@ -296,7 +296,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-11-09 16:44:34"
+            "time": "2016-10-22 18:11:21"
         },
         {
             "name": "api-clients/resource-test-utilities",
@@ -304,12 +304,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/resource-test-utilities.git",
-                "reference": "878d0b6a7e545f910307de492cd2315c91151130"
+                "reference": "bf5c8f58fba80e6d35678bccd9c8b526fe7c1a03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/resource-test-utilities/zipball/878d0b6a7e545f910307de492cd2315c91151130",
-                "reference": "878d0b6a7e545f910307de492cd2315c91151130",
+                "url": "https://api.github.com/repos/php-api-clients/resource-test-utilities/zipball/bf5c8f58fba80e6d35678bccd9c8b526fe7c1a03",
+                "reference": "bf5c8f58fba80e6d35678bccd9c8b526fe7c1a03",
                 "shasum": ""
             },
             "require": {
@@ -346,7 +346,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-11-20 12:18:37"
+            "time": "2016-11-20 14:55:10"
         },
         {
             "name": "api-clients/service",
@@ -393,12 +393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/test-utilities.git",
-                "reference": "0890f53574fa987177e33557680e701f444eaa55"
+                "reference": "dc2d7a447eb02be1e8e4847265391b19f2076af2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/test-utilities/zipball/0890f53574fa987177e33557680e701f444eaa55",
-                "reference": "0890f53574fa987177e33557680e701f444eaa55",
+                "url": "https://api.github.com/repos/php-api-clients/test-utilities/zipball/dc2d7a447eb02be1e8e4847265391b19f2076af2",
+                "reference": "dc2d7a447eb02be1e8e4847265391b19f2076af2",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2016-11-05 22:45:05"
+            "time": "2016-11-20 15:12:15"
         },
         {
             "name": "api-clients/transport",
@@ -3842,16 +3842,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "c99da1119ae61e15de0e4829196b9fba6f73d065"
+                "reference": "5be36e1f3ac7ecbe7e34fb641480ad8497b83aa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/c99da1119ae61e15de0e4829196b9fba6f73d065",
-                "reference": "c99da1119ae61e15de0e4829196b9fba6f73d065",
+                "url": "https://api.github.com/repos/symfony/console/zipball/5be36e1f3ac7ecbe7e34fb641480ad8497b83aa6",
+                "reference": "5be36e1f3ac7ecbe7e34fb641480ad8497b83aa6",
                 "shasum": ""
             },
             "require": {
@@ -3899,20 +3899,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-06 01:44:51"
+            "time": "2016-11-16 22:17:09"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8"
+                "reference": "c058661c32f5b462722e36d120905940089cbd9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
-                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/c058661c32f5b462722e36d120905940089cbd9a",
+                "reference": "c058661c32f5b462722e36d120905940089cbd9a",
                 "shasum": ""
             },
             "require": {
@@ -3956,11 +3956,11 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 11:02:40"
+            "time": "2016-11-15 12:55:20"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -4020,16 +4020,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "205b5ffbb518a98ba2ae60a52656c4a31ab00c6f"
+                "reference": "9925935bf7144f9e4d2b976905881b4face036fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/205b5ffbb518a98ba2ae60a52656c4a31ab00c6f",
-                "reference": "205b5ffbb518a98ba2ae60a52656c4a31ab00c6f",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/9925935bf7144f9e4d2b976905881b4face036fb",
+                "reference": "9925935bf7144f9e4d2b976905881b4face036fb",
                 "shasum": ""
             },
             "require": {
@@ -4065,7 +4065,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-28 00:11:12"
+            "time": "2016-11-03 08:04:31"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -4128,7 +4128,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -4177,16 +4177,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27"
+                "reference": "9da375317228e54f4ea1b013b30fa47417e84943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/7ff51b06c6c3d5cc6686df69004a42c69df09e27",
-                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/9da375317228e54f4ea1b013b30fa47417e84943",
+                "reference": "9da375317228e54f4ea1b013b30fa47417e84943",
                 "shasum": ""
             },
             "require": {
@@ -4222,7 +4222,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-24 18:41:13"
+            "time": "2016-11-18 21:05:29"
         },
         {
             "name": "webmozart/assert",
@@ -4588,7 +4588,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -4637,7 +4637,7 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v3.1.6",
+            "version": "v3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
@@ -4685,14 +4685,7 @@
             "time": "2016-06-29 05:41:56"
         }
     ],
-    "aliases": [
-        {
-            "alias": "dev-master",
-            "alias_normalized": "9999999-dev",
-            "version": "dev-feature-subscribable-resource-interface",
-            "package": "api-clients/resource"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "api-clients/foundation": 20,
