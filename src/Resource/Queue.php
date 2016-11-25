@@ -9,6 +9,7 @@ use DateTime;
 
 /**
  * @Nested(
+ *     message_stats="MessageStats",
  *     messages_details="Details",
  *     messages_ready_details="Details",
  *     messages_unacknowledged_details="Details",
@@ -18,6 +19,16 @@ use DateTime;
  */
 abstract class Queue extends AbstractResource implements QueueInterface
 {
+    /**
+     * @var int
+     */
+    protected $memory;
+
+    /**
+     * @var MessageStats
+     */
+    protected $message_stats;
+
     /**
      * @var int
      */
@@ -182,6 +193,22 @@ abstract class Queue extends AbstractResource implements QueueInterface
      * @var string
      */
     protected $node;
+
+    /**
+     * @return int
+     */
+    public function memory() : int
+    {
+        return $this->memory;
+    }
+
+    /**
+     * @return MessageStats
+     */
+    public function messageStats() : MessageStats
+    {
+        return $this->message_stats;
+    }
 
     /**
      * @return int

@@ -14,7 +14,7 @@ use ApiClients\Foundation\Resource\AbstractResource;
  *     contexts="Overview\Context"
  * )
  * @Nested(
- *     message_stats="Overview\MessageStats",
+ *     message_stats="MessageStats",
  *     queue_totals="Overview\QueueTotals",
  *     object_totals="Overview\ObjectTotals"
  * )
@@ -58,7 +58,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     protected $erlang_full_version;
 
     /**
-     * @var Overview\MessageStats
+     * @var MessageStats
      */
     protected $message_stats;
 
@@ -154,9 +154,9 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     }
 
     /**
-     * @return Overview\MessageStats
+     * @return MessageStats
      */
-    public function messageStats() : Overview\MessageStats
+    public function messageStats() : MessageStats
     {
         return $this->message_stats;
     }

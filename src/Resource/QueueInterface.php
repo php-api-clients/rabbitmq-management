@@ -10,6 +10,16 @@ interface QueueInterface extends ResourceInterface
     /**
      * @return int
      */
+    public function memory() : int;
+
+    /**
+     * @return MessageStats
+     */
+    public function messageStats() : MessageStats;
+
+    /**
+     * @return int
+     */
     public function messages() : int;
 
     /**

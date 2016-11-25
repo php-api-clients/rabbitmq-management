@@ -1,5 +1,10 @@
 class: Queue
 properties:
+  memory: int
+  message_stats:
+    type: MessageStats
+    annotations:
+      nested: MessageStats
   messages: int
   messages_details:
     type: Details

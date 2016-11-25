@@ -63,9 +63,9 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     }
 
     /**
-     * @return Overview\MessageStats
+     * @return MessageStats
      */
-    public function messageStats() : Overview\MessageStats
+    public function messageStats() : MessageStats
     {
         return null;
     }

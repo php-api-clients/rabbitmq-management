@@ -1,0 +1,62 @@
+class: MessageStats
+properties:
+  deliver: int
+  deliver_details:
+    type: Details
+    annotations:
+      nested: Details
+  deliver_no_ack: int
+  deliver_no_ack_details:
+    type: Details
+    annotations:
+      nested: Details
+  get: int
+  get_details:
+    type: Details
+    annotations:
+      nested: Details
+  get_no_ack: int
+  get_no_ack_details:
+    type: Details
+    annotations:
+      nested: Details
+  publish: int
+  publish_details:
+    type: Details
+    annotations:
+      nested: Details
+  publish_in: int
+  publish_in_details:
+    type: Details
+    annotations:
+      nested: Details
+  publish_out: int
+  publish_out_details:
+    type: Details
+    annotations:
+      nested: Details
+  ack: int
+  ack_details:
+    type: Details
+    annotations:
+      nested: Details
+  deliver_get: int
+  deliver_get_details:
+    type: Details
+    annotations:
+      nested: Details
+  confirm: int
+  confirm_details:
+    type: Details
+    annotations:
+      nested: Details
+  return_unroutable: int
+  return_unroutable_details:
+    type: Details
+    annotations:
+      nested: Details
+  redeliver: int
+  redeliver_details:
+    type: Details
+    annotations:
+      nested: Details

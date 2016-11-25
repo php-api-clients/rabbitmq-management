@@ -2,8 +2,8 @@
 
 namespace ApiClients\Client\RabbitMQ\Management\Resource\Async\Connection\ClientProperties;
 
-use ApiClients\Client\RabbitMQ\Management\Resource\Connection\ClientProperties\EmptyCapabilities as BaseEmptyCapabilities;
+use ApiClients\Client\RabbitMQ\Management\Resource\Connection\ClientProperties\EmptyCapabilities as BEC;
 
-class EmptyCapabilities extends BaseEmptyCapabilities
+class EmptyCapabilities extends BEC
 {
 }

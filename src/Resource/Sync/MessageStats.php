@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace ApiClients\Client\RabbitMQ\Management\Resource\Async\Overview;
+namespace ApiClients\Client\RabbitMQ\Management\Resource\Sync;
 
-use ApiClients\Client\RabbitMQ\Management\Resource\Overview\MessageStats as BaseMessageStats;
+use ApiClients\Client\RabbitMQ\Management\Resource\MessageStats as BaseMessageStats;
 
 class MessageStats extends BaseMessageStats
 {

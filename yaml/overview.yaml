@@ -11,9 +11,9 @@ properties:
   erlang_version: string
   erlang_full_version: string
   message_stats:
-    type: Overview\MessageStats
+    type: MessageStats
     annotations:
-      nested: Overview\MessageStats
+      nested: MessageStats
   queue_totals:
     type: Overview\QueueTotals
     annotations:

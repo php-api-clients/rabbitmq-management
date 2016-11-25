@@ -42,9 +42,9 @@ interface OverviewInterface extends ResourceInterface
     public function erlangFullVersion() : string;
 
     /**
-     * @return Overview\MessageStats
+     * @return MessageStats
      */
-    public function messageStats() : Overview\MessageStats;
+    public function messageStats() : MessageStats;
 
     /**
      * @return Overview\QueueTotals

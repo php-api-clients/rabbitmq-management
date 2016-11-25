@@ -10,6 +10,22 @@ abstract class EmptyQueue implements QueueInterface, EmptyResourceInterface
     /**
      * @return int
      */
+    public function memory() : int
+    {
+        return null;
+    }
+
+    /**
+     * @return MessageStats
+     */
+    public function messageStats() : MessageStats
+    {
+        return null;
+    }
+
+    /**
+     * @return int
+     */
     public function messages() : int
     {
         return null;
