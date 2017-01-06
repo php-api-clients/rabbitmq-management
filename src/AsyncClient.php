@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace ApiClients\Client\RabbitMQ\Management;
 
+use ApiClients\Foundation\ClientInterface as FoundationClientInterface;
+use ApiClients\Foundation\Factory;
 use ApiClients\Foundation\Hydrator\CommandBus\Command\HydrateCommand;
 use ApiClients\Foundation\Transport\CommandBus\Command\SimpleRequestCommand;
 use Psr\Http\Message\ResponseInterface;
@@ -11,35 +13,54 @@ use React\Promise\PromiseInterface;
 use Rx\Observable;
 use Rx\ObservableInterface;
 use Rx\React\Promise;
-use ApiClients\Foundation\Client;
-use ApiClients\Foundation\Factory;
 use function React\Promise\resolve;
 
-final class AsyncClient
+final class AsyncClient implements AsyncClientInterface
 {
     /**
-     * @var Client
+     * @var FoundationClientInterface
      */
-    protected $client;
+    private $client;
 
     /**
+     * Create a new AsyncClient based on the loop and other options pass
+     *
      * @param LoopInterface $loop
      * @param string $baseUrl
      * @param string $username
      * @param string $password
-     * @param Client|null $client
+     * @param array $options
+     * @return AsyncClient
      */
-    public function __construct(
+    public static function create(
         LoopInterface $loop,
         string $baseUrl,
         string $username,
         string $password,
-        Client $client = null
-    ) {
-        if (!($client instanceof Client)) {
-            $options = ApiSettings::getOptions($baseUrl, $username, $password, 'Async');
-            $client = Factory::create($loop, $options);
-        }
+        array $options = []
+    ): self {
+        $options = ApiSettings::getOptions($baseUrl, $username, $password, 'Async');
+        $client = Factory::create($loop, $options);
+        return new self($client);
+    }
+
+    /**
+     * Create an AsyncClient from a ApiClients\Foundation\ClientInterface.
+     * Be sure to pass in a client with the options from ApiSettings and the Async namespace suffix.
+     *
+     * @param FoundationClientInterface $client
+     * @return AsyncClient
+     */
+    public static function createFromClient(FoundationClientInterface $client): self
+    {
+        return new self($client);
+    }
+
+    /**
+     * @param FoundationClientInterface $client
+     */
+    private function __construct(FoundationClientInterface $client)
+    {
         $this->client = $client;
     }
 

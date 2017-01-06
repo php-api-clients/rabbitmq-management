@@ -3,46 +3,70 @@ declare(strict_types=1);
 
 namespace ApiClients\Client\RabbitMQ\Management;
 
-use ApiClients\Foundation\Hydrator\Options;
-use React\EventLoop\Factory as LoopFactory;
-use Rx\React\Promise;
 use ApiClients\Client\RabbitMQ\Management\Resource\OverviewInterface;
-use ApiClients\Foundation\Transport\Client as Transport;
-use ApiClients\Foundation\Transport\Factory;
+use ApiClients\Foundation\Factory;
+use React\EventLoop\Factory as LoopFactory;
+use React\EventLoop\LoopInterface;
+use Rx\React\Promise;
 use function Clue\React\Block\await;
 use function React\Promise\resolve;
 
-final class Client
+final class Client implements ClientInterface
 {
     /**
-     * @var Transport
+     * @var LoopInterface
      */
-    protected $transport;
+    private $loop;
 
     /**
-     * @var AsyncClient
+     * @var AsyncClientInterface
      */
-    protected $client;
+    private $asyncClient;
 
     /**
+     * Create a new AsyncClient based on the loop and other options pass
+     *
      * @param string $baseUrl
      * @param string $username
      * @param string $password
-     * @param Transport|null $transport
+     * @param array $options
+     * @return Client
      */
-    public function __construct(
+    public static function create(
         string $baseUrl,
         string $username,
         string $password,
-        Transport $transport = null
-    ) {
+        array $options = []
+    ): self {
         $loop = LoopFactory::create();
-        if (!($transport instanceof Transport)) {
-            $options = ApiSettings::getOptions($baseUrl, $username, $password, 'Sync');
-            $transport = Factory::create($loop, $options);
-        }
-        $this->transport = $transport;
-        $this->client = new AsyncClient($loop, $baseUrl, $username, $password, $this->transport);
+        $options = ApiSettings::getOptions($baseUrl, $username, $password, 'Sync');
+        $client = Factory::create($loop, $options);
+        $asyncClient = AsyncClient::createFromClient($client);
+        return self::createFromClient($loop, $asyncClient);
+    }
+
+    /**
+     * Create an Client from a AsyncClientInterface.
+     * Be sure to pass in a client with the options from ApiSettings and the Sync namespace suffix,
+     * and pass in the same loop as associated with the AsyncClient you're passing in.
+     *
+     * @param LoopInterface $loop
+     * @param AsyncClientInterface $asyncClient
+     * @return Client
+     */
+    public static function createFromClient(LoopInterface $loop, AsyncClientInterface $asyncClient): self
+    {
+        return new self($loop, $asyncClient);
+    }
+
+    /**
+     * @param LoopInterface $loop
+     * @param AsyncClientInterface $asyncClient
+     */
+    private function __construct(LoopInterface $loop, AsyncClientInterface $asyncClient)
+    {
+        $this->loop = $loop;
+        $this->asyncClient = $asyncClient;
     }
 
     /**
@@ -51,8 +75,8 @@ final class Client
     public function overview(): OverviewInterface
     {
         return await(
-            $this->client->overview(),
-            $this->transport->getLoop()
+            $this->asyncClient->overview(),
+            $this->loop
         );
     }
 
@@ -63,9 +87,9 @@ final class Client
     {
         return await(
             Promise::fromObservable(
-                $this->client->queues()->toArray()
+                $this->asyncClient->queues()->toArray()
             ),
-            $this->transport->getLoop()
+            $this->loop
         );
     }
 
@@ -76,9 +100,9 @@ final class Client
     {
         return await(
             Promise::fromObservable(
-                $this->client->connections()->toArray()
+                $this->asyncClient->connections()->toArray()
             ),
-            $this->transport->getLoop()
+            $this->loop
         );
     }
 }
