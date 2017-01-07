@@ -14,6 +14,7 @@ use Rx\Observable;
 use Rx\ObservableInterface;
 use Rx\React\Promise;
 use function React\Promise\resolve;
+use Rx\Scheduler\EventLoopScheduler;
 
 final class AsyncClient implements AsyncClientInterface
 {
@@ -79,18 +80,26 @@ final class AsyncClient implements AsyncClientInterface
     }
 
     /**
+     * @param int|null $interval
      * @return ObservableInterface
      */
-    public function queues(): ObservableInterface
+    public function queues(int $interval = null): ObservableInterface
     {
-        return Promise::toObservable($this->client->handle(
-            new SimpleRequestCommand('queues')
-        ))->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson());
-        })->flatMap(function ($queue) {
+        if ($interval === null) {
             return Promise::toObservable($this->client->handle(
-                new HydrateCommand('Queue', $queue)
-            ));
+                new SimpleRequestCommand('queues')
+            ))->flatMap(function (ResponseInterface $response) {
+                return Observable::fromArray($response->getBody()->getJson());
+            })->flatMap(function ($queue) {
+                return Promise::toObservable($this->client->handle(
+                    new HydrateCommand('Queue', $queue)
+                ));
+            });
+        }
+
+        $scheduler = new EventLoopScheduler($this->client->getFromContainer(LoopInterface::class));
+        return Observable::interval($interval * 1000, $scheduler)->flatMap(function () {
+            return $this->queues();
         });
     }
 

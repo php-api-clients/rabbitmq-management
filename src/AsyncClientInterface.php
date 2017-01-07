@@ -16,9 +16,10 @@ interface AsyncClientInterface
     public function overview(): PromiseInterface;
 
     /**
+     * @param int|null $interval
      * @return ObservableInterface
      */
-    public function queues(): ObservableInterface;
+    public function queues(int $interval = null): ObservableInterface;
 
     /**
      * @return ObservableInterface
