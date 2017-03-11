@@ -1,5 +1,4 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace ApiClients\Client\RabbitMQ\Management;
 
@@ -7,7 +6,9 @@ use ApiClients\Foundation\Hydrator\Options as HydratorOptions;
 use ApiClients\Foundation\Options;
 use ApiClients\Foundation\Transport\Middleware\JsonDecodeMiddleware;
 use ApiClients\Foundation\Transport\Options as TransportOptions;
-use ApiClients\Foundation\Transport\UserAgentStrategies;
+use ApiClients\Middleware\UserAgent\Options as UserAgentMiddlewareOptions;
+use ApiClients\Middleware\UserAgent\UserAgentMiddleware;
+use ApiClients\Middleware\UserAgent\UserAgentStrategies;
 
 final class ApiSettings
 {
@@ -24,9 +25,14 @@ final class ApiSettings
             ],
             TransportOptions::MIDDLEWARE => [
                 JsonDecodeMiddleware::class,
+                UserAgentMiddleware::class,
             ],
-            TransportOptions::USER_AGENT_STRATEGY => UserAgentStrategies::PACKAGE_VERSION,
-            TransportOptions::PACKAGE => 'api-clients/rabbitmq-management',
+            TransportOptions::DEFAULT_REQUEST_OPTIONS => [
+                UserAgentMiddleware::class => [
+                    UserAgentMiddlewareOptions::STRATEGY => UserAgentStrategies::PACKAGE_VERSION,
+                    UserAgentMiddlewareOptions::PACKAGE => 'api-clients/rabbitmq-management',
+                ],
+            ],
         ],
     ];
 
