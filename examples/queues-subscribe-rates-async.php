@@ -1,10 +1,8 @@
 <?php declare(strict_types=1);
 
 use ApiClients\Client\RabbitMQ\Management\AsyncClient;
-use function ApiClients\Foundation\resource_pretty_print;
 use ApiClients\Client\RabbitMQ\Management\Resource\QueueInterface;
 use React\EventLoop\Factory;
-use Rx\Observer\CallbackObserver;
 
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
@@ -18,9 +16,9 @@ $queues = [];
 $client = AsyncClient::create($loop, $config['baseUrl'], $config['username'], $config['password']);
 $client->queues(1)->filter(function (QueueInterface $queue) {
     return strpos($queue->name(), 'amq.gen') !== 0;
-})->subscribe(new CallbackObserver(function (QueueInterface $queue) use (&$queues) {
+})->subscribe(function (QueueInterface $queue) use (&$queues) {
     $queues[$queue->name()] = $queue->messageStats()->deliverDetails()->rate();
-}));
+});
 
 $loop->addPeriodicTimer(1, function () use (&$height, &$length, &$queues) {
     for ($i = 0; $i < $height; $i++) {

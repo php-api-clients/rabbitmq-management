@@ -12,8 +12,8 @@ $loop = Factory::create();
 $config = require 'resolve_config.php';
 
 $client = AsyncClient::create($loop, $config['baseUrl'], $config['username'], $config['password']);
-$connections = $client->connections()->subscribe(new CallbackObserver(function (ConnectionInterface $connection) {
+$connections = $client->connections()->subscribe(function (ConnectionInterface $connection) {
     resource_pretty_print($connection);
-}));
+});
 
 $loop->run();
