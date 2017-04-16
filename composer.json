@@ -15,7 +15,8 @@
     "api-clients/resource-test-utilities": "dev-master",
     "api-clients/resource": "^3.0",
     "api-clients/transport": "dev-master",
-    "api-clients/middleware-user-agent": "^1.0"
+    "api-clients/middleware-user-agent": "^1.0",
+    "api-clients/middleware-json": "dev-master"
   },
   "require-dev": {
     "api-clients/resource-generator": "dev-master",

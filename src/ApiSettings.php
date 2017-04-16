@@ -4,8 +4,8 @@ namespace ApiClients\Client\RabbitMQ\Management;
 
 use ApiClients\Foundation\Hydrator\Options as HydratorOptions;
 use ApiClients\Foundation\Options;
-use ApiClients\Foundation\Transport\Middleware\JsonDecodeMiddleware;
 use ApiClients\Foundation\Transport\Options as TransportOptions;
+use ApiClients\Middleware\Json\JsonDecodeMiddleware;
 use ApiClients\Middleware\UserAgent\Options as UserAgentMiddlewareOptions;
 use ApiClients\Middleware\UserAgent\UserAgentMiddleware;
 use ApiClients\Middleware\UserAgent\UserAgentStrategies;
