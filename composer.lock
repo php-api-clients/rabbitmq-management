@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c35c54bb8156d98471734813839b41ce",
+    "content-hash": "ede48aaa080ada75de4e27c1f9152475",
     "packages": [
         {
             "name": "api-clients/client-services",
@@ -2779,7 +2779,7 @@
                 }
             ],
             "description": "Resource from YAML generation tool",
-            "time": "2017-04-10T17:37:24+00:00"
+            "time": "2017-04-10 17:37:24"
         },
         {
             "name": "api-clients/test-utilities",
@@ -4794,9 +4794,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "api-clients/client-services": 20,
         "api-clients/foundation": 20,
         "api-clients/resource-test-utilities": 20,
-        "api-clients/client-services": 20,
         "api-clients/resource-generator": 20
     },
     "prefer-stable": true,
