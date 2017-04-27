@@ -2,8 +2,8 @@
 
 namespace ApiClients\Client\RabbitMQ\Management\Resource;
 
-use ApiClients\Foundation\Hydrator\Annotations\EmptyResource;
-use ApiClients\Foundation\Hydrator\Annotations\Nested;
+use ApiClients\Foundation\Hydrator\Annotation\EmptyResource;
+use ApiClients\Foundation\Hydrator\Annotation\Nested;
 use ApiClients\Foundation\Resource\AbstractResource;
 
 /**

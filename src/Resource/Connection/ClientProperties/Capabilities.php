@@ -2,8 +2,8 @@
 
 namespace ApiClients\Client\RabbitMQ\Management\Resource\Connection\ClientProperties;
 
-use ApiClients\Foundation\Hydrator\Annotations\EmptyResource;
-use ApiClients\Foundation\Hydrator\Annotations\Rename;
+use ApiClients\Foundation\Hydrator\Annotation\EmptyResource;
+use ApiClients\Foundation\Hydrator\Annotation\Rename;
 use ApiClients\Foundation\Resource\AbstractResource;
 
 /**
