@@ -10,7 +10,6 @@ cache:
 php:
   - 7.0
   - 7.1
-  - hhvm
   - nightly
 
 ## Build matrix for lowest and highest possible targets
@@ -32,8 +31,6 @@ matrix:
       env: dependencies=highest
     - php: nightly
       env: dependencies=highest
-  allow_failures:
-    - php: hhvm
 
 ## Install or update dependencies
 install:
