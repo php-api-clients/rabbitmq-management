@@ -7,6 +7,7 @@ use ApiClients\Foundation\ClientInterface as FoundationClientInterface;
 use ApiClients\Foundation\Factory;
 use ApiClients\Foundation\Hydrator\CommandBus\Command\HydrateCommand;
 use ApiClients\Foundation\Transport\CommandBus\Command\SimpleRequestCommand;
+use function ApiClients\Tools\Rx\observableFromArray;
 use Psr\Http\Message\ResponseInterface;
 use React\EventLoop\LoopInterface;
 use React\Promise\PromiseInterface;
@@ -89,7 +90,7 @@ final class AsyncClient implements AsyncClientInterface
             return Promise::toObservable($this->client->handle(
                 new SimpleRequestCommand('queues')
             ))->flatMap(function (ResponseInterface $response) {
-                return Observable::fromArray($response->getBody()->getJson());
+                return observableFromArray($response->getBody()->getJson());
             })->flatMap(function ($queue) {
                 return Promise::toObservable($this->client->handle(
                     new HydrateCommand('Queue', $queue)
@@ -111,7 +112,7 @@ final class AsyncClient implements AsyncClientInterface
         return Promise::toObservable($this->client->handle(
             new SimpleRequestCommand('connections')
         ))->flatMap(function (ResponseInterface $response) {
-            return Observable::fromArray($response->getBody()->getJson());
+            return observableFromArray($response->getBody()->getJson());
         })->flatMap(function ($connection) {
             return Promise::toObservable($this->client->handle(
                 new HydrateCommand('Connection', $connection)
