@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec57f111cb93b1a1e7636608438b4832",
+    "content-hash": "f7dd7a760be76c26adcbaec6f5dd9bfd",
     "packages": [
         {
             "name": "api-clients/client-services",
@@ -299,16 +299,16 @@
         },
         {
             "name": "api-clients/middleware-json",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/middleware-json.git",
-                "reference": "a59293516db3b69348f466a7e8e4ba43dd88b1ce"
+                "reference": "2715b99244e1d608461b4ced0d280930ccbe2057"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/middleware-json/zipball/a59293516db3b69348f466a7e8e4ba43dd88b1ce",
-                "reference": "a59293516db3b69348f466a7e8e4ba43dd88b1ce",
+                "url": "https://api.github.com/repos/php-api-clients/middleware-json/zipball/2715b99244e1d608461b4ced0d280930ccbe2057",
+                "reference": "2715b99244e1d608461b4ced0d280930ccbe2057",
                 "shasum": ""
             },
             "require": {
@@ -339,7 +339,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2017-07-04T20:44:52+00:00"
+            "time": "2017-07-13T19:38:25+00:00"
         },
         {
             "name": "api-clients/middleware-user-agent",
@@ -2557,7 +2557,7 @@
                 }
             ],
             "description": "Resource from YAML generation tool",
-            "time": "2017-05-15T08:59:28+00:00"
+            "time": "2017-05-15 08:59:28"
         },
         {
             "name": "api-clients/resource-test-utilities",
@@ -2604,7 +2604,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2017-05-21T12:13:29+00:00"
+            "time": "2017-05-21 12:13:29"
         },
         {
             "name": "api-clients/test-utilities",
