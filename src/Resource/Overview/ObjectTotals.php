@@ -38,7 +38,7 @@ abstract class ObjectTotals extends AbstractResource implements ObjectTotalsInte
     /**
      * @return int
      */
-    public function consumers() : int
+    public function consumers(): int
     {
         return $this->consumers;
     }
@@ -46,7 +46,7 @@ abstract class ObjectTotals extends AbstractResource implements ObjectTotalsInte
     /**
      * @return int
      */
-    public function queues() : int
+    public function queues(): int
     {
         return $this->queues;
     }
@@ -54,7 +54,7 @@ abstract class ObjectTotals extends AbstractResource implements ObjectTotalsInte
     /**
      * @return int
      */
-    public function exchanges() : int
+    public function exchanges(): int
     {
         return $this->exchanges;
     }
@@ -62,7 +62,7 @@ abstract class ObjectTotals extends AbstractResource implements ObjectTotalsInte
     /**
      * @return int
      */
-    public function connections() : int
+    public function connections(): int
     {
         return $this->connections;
     }
@@ -70,7 +70,7 @@ abstract class ObjectTotals extends AbstractResource implements ObjectTotalsInte
     /**
      * @return int
      */
-    public function channels() : int
+    public function channels(): int
     {
         return $this->channels;
     }

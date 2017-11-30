@@ -9,7 +9,7 @@ abstract class EmptyCapabilities implements CapabilitiesInterface, EmptyResource
     /**
      * @return bool
      */
-    public function publisherConfirms() : bool
+    public function publisherConfirms(): bool
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyCapabilities implements CapabilitiesInterface, EmptyResource
     /**
      * @return bool
      */
-    public function exchangeExchangeBindings() : bool
+    public function exchangeExchangeBindings(): bool
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyCapabilities implements CapabilitiesInterface, EmptyResource
     /**
      * @return bool
      */
-    public function consumerCancelNotify() : bool
+    public function consumerCancelNotify(): bool
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyCapabilities implements CapabilitiesInterface, EmptyResource
     /**
      * @return bool
      */
-    public function authenticationFailureClose() : bool
+    public function authenticationFailureClose(): bool
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyCapabilities implements CapabilitiesInterface, EmptyResource
     /**
      * @return bool
      */
-    public function basicNack() : bool
+    public function basicNack(): bool
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyCapabilities implements CapabilitiesInterface, EmptyResource
     /**
      * @return bool
      */
-    public function connectionBlocked() : bool
+    public function connectionBlocked(): bool
     {
         return null;
     }

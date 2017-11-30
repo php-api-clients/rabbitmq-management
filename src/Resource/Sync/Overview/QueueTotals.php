@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Overview\QueueTotals as BaseQ
 
 class QueueTotals extends BaseQueueTotals
 {
-    public function refresh() : QueueTotals
+    public function refresh(): QueueTotals
     {
         return $this->wait($this->callAsync('refresh'));
     }

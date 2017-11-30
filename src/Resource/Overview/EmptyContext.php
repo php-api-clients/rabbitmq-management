@@ -9,7 +9,7 @@ abstract class EmptyContext implements ContextInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyContext implements ContextInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyContext implements ContextInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function path() : string
+    public function path(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyContext implements ContextInterface, EmptyResourceInterface
     /**
      * @return string
      */
-    public function port() : string
+    public function port(): string
     {
         return null;
     }

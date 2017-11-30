@@ -9,7 +9,7 @@ abstract class EmptyQueueTotals implements QueueTotalsInterface, EmptyResourceIn
     /**
      * @return int
      */
-    public function messages() : int
+    public function messages(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyQueueTotals implements QueueTotalsInterface, EmptyResourceIn
     /**
      * @return Details
      */
-    public function messagesDetails() : Details
+    public function messagesDetails(): Details
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyQueueTotals implements QueueTotalsInterface, EmptyResourceIn
     /**
      * @return int
      */
-    public function messagesReady() : int
+    public function messagesReady(): int
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyQueueTotals implements QueueTotalsInterface, EmptyResourceIn
     /**
      * @return Details
      */
-    public function messagesReadyDetails() : Details
+    public function messagesReadyDetails(): Details
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyQueueTotals implements QueueTotalsInterface, EmptyResourceIn
     /**
      * @return int
      */
-    public function messagesUnacknowledged() : int
+    public function messagesUnacknowledged(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyQueueTotals implements QueueTotalsInterface, EmptyResourceIn
     /**
      * @return Details
      */
-    public function messagesUnacknowledgedDetails() : Details
+    public function messagesUnacknowledgedDetails(): Details
     {
         return null;
     }

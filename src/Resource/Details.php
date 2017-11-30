@@ -18,7 +18,7 @@ abstract class Details extends AbstractResource implements DetailsInterface
     /**
      * @return float
      */
-    public function rate() : float
+    public function rate(): float
     {
         return $this->rate;
     }

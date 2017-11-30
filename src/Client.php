@@ -9,7 +9,6 @@ use React\EventLoop\Factory as LoopFactory;
 use React\EventLoop\LoopInterface;
 use Rx\React\Promise;
 use function Clue\React\Block\await;
-use function React\Promise\resolve;
 
 final class Client implements ClientInterface
 {
@@ -24,12 +23,22 @@ final class Client implements ClientInterface
     private $asyncClient;
 
     /**
-     * Create a new AsyncClient based on the loop and other options pass
+     * @param LoopInterface        $loop
+     * @param AsyncClientInterface $asyncClient
+     */
+    private function __construct(LoopInterface $loop, AsyncClientInterface $asyncClient)
+    {
+        $this->loop = $loop;
+        $this->asyncClient = $asyncClient;
+    }
+
+    /**
+     * Create a new AsyncClient based on the loop and other options pass.
      *
-     * @param string $baseUrl
-     * @param string $username
-     * @param string $password
-     * @param array $options
+     * @param  string $baseUrl
+     * @param  string $username
+     * @param  string $password
+     * @param  array  $options
      * @return Client
      */
     public static function create(
@@ -42,6 +51,7 @@ final class Client implements ClientInterface
         $options = ApiSettings::getOptions($baseUrl, $username, $password, 'Sync');
         $client = Factory::create($loop, $options);
         $asyncClient = AsyncClient::createFromClient($client);
+
         return self::createFromClient($loop, $asyncClient);
     }
 
@@ -50,23 +60,13 @@ final class Client implements ClientInterface
      * Be sure to pass in a client with the options from ApiSettings and the Sync namespace suffix,
      * and pass in the same loop as associated with the AsyncClient you're passing in.
      *
-     * @param LoopInterface $loop
-     * @param AsyncClientInterface $asyncClient
+     * @param  LoopInterface        $loop
+     * @param  AsyncClientInterface $asyncClient
      * @return Client
      */
     public static function createFromClient(LoopInterface $loop, AsyncClientInterface $asyncClient): self
     {
         return new self($loop, $asyncClient);
-    }
-
-    /**
-     * @param LoopInterface $loop
-     * @param AsyncClientInterface $asyncClient
-     */
-    private function __construct(LoopInterface $loop, AsyncClientInterface $asyncClient)
-    {
-        $this->loop = $loop;
-        $this->asyncClient = $asyncClient;
     }
 
     /**

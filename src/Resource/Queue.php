@@ -197,7 +197,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function memory() : int
+    public function memory(): int
     {
         return $this->memory;
     }
@@ -205,7 +205,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return MessageStats
      */
-    public function messageStats() : MessageStats
+    public function messageStats(): MessageStats
     {
         return $this->message_stats;
     }
@@ -213,7 +213,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messages() : int
+    public function messages(): int
     {
         return $this->messages;
     }
@@ -221,7 +221,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return Details
      */
-    public function messagesDetails() : Details
+    public function messagesDetails(): Details
     {
         return $this->messages_details;
     }
@@ -229,7 +229,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messagesReady() : int
+    public function messagesReady(): int
     {
         return $this->messages_ready;
     }
@@ -237,7 +237,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return Details
      */
-    public function messagesReadyDetails() : Details
+    public function messagesReadyDetails(): Details
     {
         return $this->messages_ready_details;
     }
@@ -245,7 +245,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messagesUnacknowledged() : int
+    public function messagesUnacknowledged(): int
     {
         return $this->messages_unacknowledged;
     }
@@ -253,7 +253,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return Details
      */
-    public function messagesUnacknowledgedDetails() : Details
+    public function messagesUnacknowledgedDetails(): Details
     {
         return $this->messages_unacknowledged_details;
     }
@@ -261,7 +261,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return DateTime
      */
-    public function idleSince() : DateTime
+    public function idleSince(): DateTime
     {
         return $this->idle_since;
     }
@@ -269,7 +269,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return mixed
      */
-    public function consumerUtilisation() : mixed
+    public function consumerUtilisation(): mixed
     {
         return $this->consumer_utilisation;
     }
@@ -277,7 +277,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return mixed
      */
-    public function policy() : mixed
+    public function policy(): mixed
     {
         return $this->policy;
     }
@@ -285,7 +285,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return mixed
      */
-    public function exclusiveConsumerTag() : mixed
+    public function exclusiveConsumerTag(): mixed
     {
         return $this->exclusive_consumer_tag;
     }
@@ -293,7 +293,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function consumers() : int
+    public function consumers(): int
     {
         return $this->consumers;
     }
@@ -301,7 +301,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return mixed
      */
-    public function recoverableSlaves() : mixed
+    public function recoverableSlaves(): mixed
     {
         return $this->recoverable_slaves;
     }
@@ -309,7 +309,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return string
      */
-    public function state() : string
+    public function state(): string
     {
         return $this->state;
     }
@@ -317,7 +317,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messagesRam() : int
+    public function messagesRam(): int
     {
         return $this->messages_ram;
     }
@@ -325,7 +325,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messagesReadyRam() : int
+    public function messagesReadyRam(): int
     {
         return $this->messages_ready_ram;
     }
@@ -333,7 +333,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messagesUnacknowledgedRam() : int
+    public function messagesUnacknowledgedRam(): int
     {
         return $this->messages_unacknowledged_ram;
     }
@@ -341,7 +341,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messagesPersistent() : int
+    public function messagesPersistent(): int
     {
         return $this->messages_persistent;
     }
@@ -349,7 +349,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messageBytes() : int
+    public function messageBytes(): int
     {
         return $this->message_bytes;
     }
@@ -357,7 +357,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messageBytesReady() : int
+    public function messageBytesReady(): int
     {
         return $this->message_bytes_ready;
     }
@@ -365,7 +365,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messageBytesUnacknowledged() : int
+    public function messageBytesUnacknowledged(): int
     {
         return $this->message_bytes_unacknowledged;
     }
@@ -373,7 +373,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messageBytesRam() : int
+    public function messageBytesRam(): int
     {
         return $this->message_bytes_ram;
     }
@@ -381,7 +381,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function messageBytesPersistent() : int
+    public function messageBytesPersistent(): int
     {
         return $this->message_bytes_persistent;
     }
@@ -389,7 +389,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return DateTime
      */
-    public function headMessageTimestamp() : DateTime
+    public function headMessageTimestamp(): DateTime
     {
         return $this->head_message_timestamp;
     }
@@ -397,7 +397,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function diskReads() : int
+    public function diskReads(): int
     {
         return $this->disk_reads;
     }
@@ -405,7 +405,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return int
      */
-    public function diskWrites() : int
+    public function diskWrites(): int
     {
         return $this->disk_writes;
     }
@@ -413,7 +413,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return Queue\BackingQueueStatus
      */
-    public function backingQueueStatus() : Queue\BackingQueueStatus
+    public function backingQueueStatus(): Queue\BackingQueueStatus
     {
         return $this->backing_queue_status;
     }
@@ -421,7 +421,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -429,7 +429,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return string
      */
-    public function vhost() : string
+    public function vhost(): string
     {
         return $this->vhost;
     }
@@ -437,7 +437,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return bool
      */
-    public function durable() : bool
+    public function durable(): bool
     {
         return $this->durable;
     }
@@ -445,7 +445,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return bool
      */
-    public function autoDelete() : bool
+    public function autoDelete(): bool
     {
         return $this->auto_delete;
     }
@@ -453,7 +453,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return bool
      */
-    public function exclusive() : bool
+    public function exclusive(): bool
     {
         return $this->exclusive;
     }
@@ -461,7 +461,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return array
      */
-    public function arguments() : array
+    public function arguments(): array
     {
         return $this->arguments;
     }
@@ -469,7 +469,7 @@ abstract class Queue extends AbstractResource implements QueueInterface
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return $this->node;
     }

@@ -100,7 +100,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function managementVersion() : string
+    public function managementVersion(): string
     {
         return $this->management_version;
     }
@@ -108,7 +108,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function ratesMode() : string
+    public function ratesMode(): string
     {
         return $this->rates_mode;
     }
@@ -116,7 +116,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return array
      */
-    public function exchangeTypes() : array
+    public function exchangeTypes(): array
     {
         return $this->exchange_types;
     }
@@ -124,7 +124,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function rabbitmqVersion() : string
+    public function rabbitmqVersion(): string
     {
         return $this->rabbitmq_version;
     }
@@ -132,7 +132,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function clusterName() : string
+    public function clusterName(): string
     {
         return $this->cluster_name;
     }
@@ -140,7 +140,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function erlangVersion() : string
+    public function erlangVersion(): string
     {
         return $this->erlang_version;
     }
@@ -148,7 +148,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function erlangFullVersion() : string
+    public function erlangFullVersion(): string
     {
         return $this->erlang_full_version;
     }
@@ -156,7 +156,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return MessageStats
      */
-    public function messageStats() : MessageStats
+    public function messageStats(): MessageStats
     {
         return $this->message_stats;
     }
@@ -164,7 +164,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return Overview\QueueTotals
      */
-    public function queueTotals() : Overview\QueueTotals
+    public function queueTotals(): Overview\QueueTotals
     {
         return $this->queue_totals;
     }
@@ -172,7 +172,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return Overview\ObjectTotals
      */
-    public function objectTotals() : Overview\ObjectTotals
+    public function objectTotals(): Overview\ObjectTotals
     {
         return $this->object_totals;
     }
@@ -180,7 +180,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return int
      */
-    public function statisticsDbEventQueue() : int
+    public function statisticsDbEventQueue(): int
     {
         return $this->statistics_db_event_queue;
     }
@@ -188,7 +188,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return $this->node;
     }
@@ -196,7 +196,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return string
      */
-    public function statisticsDbNode() : string
+    public function statisticsDbNode(): string
     {
         return $this->statistics_db_node;
     }
@@ -204,7 +204,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return array
      */
-    public function listeners() : array
+    public function listeners(): array
     {
         return $this->listeners;
     }
@@ -212,7 +212,7 @@ abstract class Overview extends AbstractResource implements OverviewInterface
     /**
      * @return array
      */
-    public function contexts() : array
+    public function contexts(): array
     {
         return $this->contexts;
     }

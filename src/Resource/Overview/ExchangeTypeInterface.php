@@ -9,15 +9,15 @@ interface ExchangeTypeInterface extends ResourceInterface
     /**
      * @return string
      */
-    public function name() : string;
+    public function name(): string;
 
     /**
      * @return string
      */
-    public function description() : string;
+    public function description(): string;
 
     /**
      * @return bool
      */
-    public function enabled() : bool;
+    public function enabled(): bool;
 }

@@ -9,7 +9,7 @@ abstract class EmptyClientProperties implements ClientPropertiesInterface, Empty
     /**
      * @return string
      */
-    public function product() : string
+    public function product(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyClientProperties implements ClientPropertiesInterface, Empty
     /**
      * @return string
      */
-    public function version() : string
+    public function version(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyClientProperties implements ClientPropertiesInterface, Empty
     /**
      * @return string
      */
-    public function platform() : string
+    public function platform(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyClientProperties implements ClientPropertiesInterface, Empty
     /**
      * @return string
      */
-    public function copyright() : string
+    public function copyright(): string
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyClientProperties implements ClientPropertiesInterface, Empty
     /**
      * @return string
      */
-    public function information() : string
+    public function information(): string
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyClientProperties implements ClientPropertiesInterface, Empty
     /**
      * @return Connection\ClientProperties\Capabilities
      */
-    public function capabilities() : Connection\ClientProperties\Capabilities
+    public function capabilities(): Connection\ClientProperties\Capabilities
     {
         return null;
     }

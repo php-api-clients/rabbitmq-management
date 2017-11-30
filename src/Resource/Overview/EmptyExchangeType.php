@@ -9,7 +9,7 @@ abstract class EmptyExchangeType implements ExchangeTypeInterface, EmptyResource
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyExchangeType implements ExchangeTypeInterface, EmptyResource
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyExchangeType implements ExchangeTypeInterface, EmptyResource
     /**
      * @return bool
      */
-    public function enabled() : bool
+    public function enabled(): bool
     {
         return null;
     }

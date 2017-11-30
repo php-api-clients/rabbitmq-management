@@ -47,7 +47,7 @@ abstract class ClientProperties extends AbstractResource implements ClientProper
     /**
      * @return string
      */
-    public function product() : string
+    public function product(): string
     {
         return $this->product;
     }
@@ -55,7 +55,7 @@ abstract class ClientProperties extends AbstractResource implements ClientProper
     /**
      * @return string
      */
-    public function version() : string
+    public function version(): string
     {
         return $this->version;
     }
@@ -63,7 +63,7 @@ abstract class ClientProperties extends AbstractResource implements ClientProper
     /**
      * @return string
      */
-    public function platform() : string
+    public function platform(): string
     {
         return $this->platform;
     }
@@ -71,7 +71,7 @@ abstract class ClientProperties extends AbstractResource implements ClientProper
     /**
      * @return string
      */
-    public function copyright() : string
+    public function copyright(): string
     {
         return $this->copyright;
     }
@@ -79,7 +79,7 @@ abstract class ClientProperties extends AbstractResource implements ClientProper
     /**
      * @return string
      */
-    public function information() : string
+    public function information(): string
     {
         return $this->information;
     }
@@ -87,7 +87,7 @@ abstract class ClientProperties extends AbstractResource implements ClientProper
     /**
      * @return Connection\ClientProperties\Capabilities
      */
-    public function capabilities() : Connection\ClientProperties\Capabilities
+    public function capabilities(): Connection\ClientProperties\Capabilities
     {
         return $this->capabilities;
     }

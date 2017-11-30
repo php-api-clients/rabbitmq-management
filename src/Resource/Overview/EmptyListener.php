@@ -9,7 +9,7 @@ abstract class EmptyListener implements ListenerInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyListener implements ListenerInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function protocol() : string
+    public function protocol(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyListener implements ListenerInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function ipAddress() : string
+    public function ipAddress(): string
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyListener implements ListenerInterface, EmptyResourceInterfac
     /**
      * @return int
      */
-    public function port() : int
+    public function port(): int
     {
         return null;
     }

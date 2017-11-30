@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Overview as BaseOverview;
 
 class Overview extends BaseOverview
 {
-    public function refresh() : Overview
+    public function refresh(): Overview
     {
         return $this->wait($this->callAsync('refresh'));
     }

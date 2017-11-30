@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Queue as BaseQueue;
 
 class Queue extends BaseQueue
 {
-    public function refresh() : Queue
+    public function refresh(): Queue
     {
         return $this->wait($this->callAsync('refresh'));
     }

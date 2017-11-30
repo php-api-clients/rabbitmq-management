@@ -9,30 +9,30 @@ interface CapabilitiesInterface extends ResourceInterface
     /**
      * @return bool
      */
-    public function publisherConfirms() : bool;
+    public function publisherConfirms(): bool;
 
     /**
      * @return bool
      */
-    public function exchangeExchangeBindings() : bool;
+    public function exchangeExchangeBindings(): bool;
 
     /**
      * @return bool
      */
-    public function consumerCancelNotify() : bool;
+    public function consumerCancelNotify(): bool;
 
     /**
      * @return bool
      */
-    public function authenticationFailureClose() : bool;
+    public function authenticationFailureClose(): bool;
 
     /**
      * @return bool
      */
-    public function basicNack() : bool;
+    public function basicNack(): bool;
 
     /**
      * @return bool
      */
-    public function connectionBlocked() : bool;
+    public function connectionBlocked(): bool;
 }

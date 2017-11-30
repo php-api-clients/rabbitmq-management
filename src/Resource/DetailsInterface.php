@@ -9,5 +9,5 @@ interface DetailsInterface extends ResourceInterface
     /**
      * @return float
      */
-    public function rate() : float;
+    public function rate(): float;
 }

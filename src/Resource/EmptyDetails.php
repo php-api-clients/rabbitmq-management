@@ -9,7 +9,7 @@ abstract class EmptyDetails implements DetailsInterface, EmptyResourceInterface
     /**
      * @return float
      */
-    public function rate() : float
+    public function rate(): float
     {
         return null;
     }

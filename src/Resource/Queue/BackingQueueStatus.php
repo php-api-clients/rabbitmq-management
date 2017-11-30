@@ -78,7 +78,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return string
      */
-    public function mode() : string
+    public function mode(): string
     {
         return $this->mode;
     }
@@ -86,7 +86,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return int
      */
-    public function q1() : int
+    public function q1(): int
     {
         return $this->q1;
     }
@@ -94,7 +94,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return int
      */
-    public function q2() : int
+    public function q2(): int
     {
         return $this->q2;
     }
@@ -102,7 +102,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return array
      */
-    public function delta() : array
+    public function delta(): array
     {
         return $this->delta;
     }
@@ -110,7 +110,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return int
      */
-    public function q3() : int
+    public function q3(): int
     {
         return $this->q3;
     }
@@ -118,7 +118,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return int
      */
-    public function q4() : int
+    public function q4(): int
     {
         return $this->q4;
     }
@@ -126,7 +126,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return int
      */
-    public function len() : int
+    public function len(): int
     {
         return $this->len;
     }
@@ -134,7 +134,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return mixed
      */
-    public function targetRamCount() : mixed
+    public function targetRamCount(): mixed
     {
         return $this->target_ram_count;
     }
@@ -142,7 +142,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return int
      */
-    public function nextSeqId() : int
+    public function nextSeqId(): int
     {
         return $this->next_seq_id;
     }
@@ -150,7 +150,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return float
      */
-    public function avgIngressRate() : float
+    public function avgIngressRate(): float
     {
         return $this->avg_ingress_rate;
     }
@@ -158,7 +158,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return float
      */
-    public function avgEgressRate() : float
+    public function avgEgressRate(): float
     {
         return $this->avg_egress_rate;
     }
@@ -166,7 +166,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return float
      */
-    public function avgAckIngressRate() : float
+    public function avgAckIngressRate(): float
     {
         return $this->avg_ack_ingress_rate;
     }
@@ -174,7 +174,7 @@ abstract class BackingQueueStatus extends AbstractResource implements BackingQue
     /**
      * @return float
      */
-    public function avgAckEgressRate() : float
+    public function avgAckEgressRate(): float
     {
         return $this->avg_ack_egress_rate;
     }

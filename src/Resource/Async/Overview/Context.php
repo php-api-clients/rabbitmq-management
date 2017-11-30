@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Overview\Context as BaseConte
 
 class Context extends BaseContext
 {
-    public function refresh() : Context
+    public function refresh(): Context
     {
         return $this->wait($this->callAsync('refresh'));
     }

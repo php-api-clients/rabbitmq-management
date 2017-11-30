@@ -9,7 +9,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function recvOct() : int
+    public function recvOct(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function sendOct() : int
+    public function sendOct(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return Details
      */
-    public function recvOctDetails() : Details
+    public function recvOctDetails(): Details
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return Details
      */
-    public function sendOctDetails() : Details
+    public function sendOctDetails(): Details
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function recvCnt() : int
+    public function recvCnt(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function sendCnt() : int
+    public function sendCnt(): int
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function sendPend() : int
+    public function sendPend(): int
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function state() : string
+    public function state(): string
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function channels() : int
+    public function channels(): int
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function type() : string
+    public function type(): string
     {
         return null;
     }
@@ -89,7 +89,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return null;
     }
@@ -97,7 +97,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return null;
     }
@@ -105,7 +105,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function port() : int
+    public function port(): int
     {
         return null;
     }
@@ -113,7 +113,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function peerPort() : int
+    public function peerPort(): int
     {
         return null;
     }
@@ -121,7 +121,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function host() : string
+    public function host(): string
     {
         return null;
     }
@@ -129,7 +129,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function peerHost() : string
+    public function peerHost(): string
     {
         return null;
     }
@@ -137,7 +137,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return bool
      */
-    public function ssl() : bool
+    public function ssl(): bool
     {
         return null;
     }
@@ -145,7 +145,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return mixed
      */
-    public function peerCertSubject() : mixed
+    public function peerCertSubject(): mixed
     {
         return null;
     }
@@ -153,7 +153,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return mixed
      */
-    public function peerCertIssuer() : mixed
+    public function peerCertIssuer(): mixed
     {
         return null;
     }
@@ -161,7 +161,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return mixed
      */
-    public function peerCertValidity() : mixed
+    public function peerCertValidity(): mixed
     {
         return null;
     }
@@ -169,7 +169,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function authMechanism() : string
+    public function authMechanism(): string
     {
         return null;
     }
@@ -177,7 +177,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return mixed
      */
-    public function sslProtocol() : mixed
+    public function sslProtocol(): mixed
     {
         return null;
     }
@@ -185,7 +185,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return mixed
      */
-    public function sslKeyExchange() : mixed
+    public function sslKeyExchange(): mixed
     {
         return null;
     }
@@ -193,7 +193,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return mixed
      */
-    public function sslCipher() : mixed
+    public function sslCipher(): mixed
     {
         return null;
     }
@@ -201,7 +201,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return mixed
      */
-    public function sslHash() : mixed
+    public function sslHash(): mixed
     {
         return null;
     }
@@ -209,7 +209,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function protocol() : string
+    public function protocol(): string
     {
         return null;
     }
@@ -217,7 +217,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function user() : string
+    public function user(): string
     {
         return null;
     }
@@ -225,7 +225,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return string
      */
-    public function vhost() : string
+    public function vhost(): string
     {
         return null;
     }
@@ -233,7 +233,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function timeout() : int
+    public function timeout(): int
     {
         return null;
     }
@@ -241,7 +241,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function frameMax() : int
+    public function frameMax(): int
     {
         return null;
     }
@@ -249,7 +249,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function channelMax() : int
+    public function channelMax(): int
     {
         return null;
     }
@@ -257,7 +257,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return Connection\ClientProperties
      */
-    public function clientProperties() : Connection\ClientProperties
+    public function clientProperties(): Connection\ClientProperties
     {
         return null;
     }
@@ -265,7 +265,7 @@ abstract class EmptyConnection implements ConnectionInterface, EmptyResourceInte
     /**
      * @return int
      */
-    public function connectedAt() : int
+    public function connectedAt(): int
     {
         return null;
     }

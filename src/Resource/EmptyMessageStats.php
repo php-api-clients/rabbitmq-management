@@ -9,7 +9,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function deliver() : int
+    public function deliver(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function deliverDetails() : Details
+    public function deliverDetails(): Details
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function deliverNoAck() : int
+    public function deliverNoAck(): int
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function deliverNoAckDetails() : Details
+    public function deliverNoAckDetails(): Details
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function get() : int
+    public function get(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function getDetails() : Details
+    public function getDetails(): Details
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function getNoAck() : int
+    public function getNoAck(): int
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function getNoAckDetails() : Details
+    public function getNoAckDetails(): Details
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function publish() : int
+    public function publish(): int
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function publishDetails() : Details
+    public function publishDetails(): Details
     {
         return null;
     }
@@ -89,7 +89,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function publishIn() : int
+    public function publishIn(): int
     {
         return null;
     }
@@ -97,7 +97,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function publishInDetails() : Details
+    public function publishInDetails(): Details
     {
         return null;
     }
@@ -105,7 +105,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function publishOut() : int
+    public function publishOut(): int
     {
         return null;
     }
@@ -113,7 +113,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function publishOutDetails() : Details
+    public function publishOutDetails(): Details
     {
         return null;
     }
@@ -121,7 +121,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function ack() : int
+    public function ack(): int
     {
         return null;
     }
@@ -129,7 +129,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function ackDetails() : Details
+    public function ackDetails(): Details
     {
         return null;
     }
@@ -137,7 +137,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function deliverGet() : int
+    public function deliverGet(): int
     {
         return null;
     }
@@ -145,7 +145,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function deliverGetDetails() : Details
+    public function deliverGetDetails(): Details
     {
         return null;
     }
@@ -153,7 +153,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function confirm() : int
+    public function confirm(): int
     {
         return null;
     }
@@ -161,7 +161,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function confirmDetails() : Details
+    public function confirmDetails(): Details
     {
         return null;
     }
@@ -169,7 +169,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function returnUnroutable() : int
+    public function returnUnroutable(): int
     {
         return null;
     }
@@ -177,7 +177,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function returnUnroutableDetails() : Details
+    public function returnUnroutableDetails(): Details
     {
         return null;
     }
@@ -185,7 +185,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return int
      */
-    public function redeliver() : int
+    public function redeliver(): int
     {
         return null;
     }
@@ -193,7 +193,7 @@ abstract class EmptyMessageStats implements MessageStatsInterface, EmptyResource
     /**
      * @return Details
      */
-    public function redeliverDetails() : Details
+    public function redeliverDetails(): Details
     {
         return null;
     }

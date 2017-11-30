@@ -33,7 +33,7 @@ abstract class Listener extends AbstractResource implements ListenerInterface
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return $this->node;
     }
@@ -41,7 +41,7 @@ abstract class Listener extends AbstractResource implements ListenerInterface
     /**
      * @return string
      */
-    public function protocol() : string
+    public function protocol(): string
     {
         return $this->protocol;
     }
@@ -49,7 +49,7 @@ abstract class Listener extends AbstractResource implements ListenerInterface
     /**
      * @return string
      */
-    public function ipAddress() : string
+    public function ipAddress(): string
     {
         return $this->ip_address;
     }
@@ -57,7 +57,7 @@ abstract class Listener extends AbstractResource implements ListenerInterface
     /**
      * @return int
      */
-    public function port() : int
+    public function port(): int
     {
         return $this->port;
     }

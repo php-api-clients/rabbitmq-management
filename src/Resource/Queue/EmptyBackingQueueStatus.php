@@ -9,7 +9,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return string
      */
-    public function mode() : string
+    public function mode(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return int
      */
-    public function q1() : int
+    public function q1(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return int
      */
-    public function q2() : int
+    public function q2(): int
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return array
      */
-    public function delta() : array
+    public function delta(): array
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return int
      */
-    public function q3() : int
+    public function q3(): int
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return int
      */
-    public function q4() : int
+    public function q4(): int
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return int
      */
-    public function len() : int
+    public function len(): int
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return mixed
      */
-    public function targetRamCount() : mixed
+    public function targetRamCount(): mixed
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return int
      */
-    public function nextSeqId() : int
+    public function nextSeqId(): int
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return float
      */
-    public function avgIngressRate() : float
+    public function avgIngressRate(): float
     {
         return null;
     }
@@ -89,7 +89,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return float
      */
-    public function avgEgressRate() : float
+    public function avgEgressRate(): float
     {
         return null;
     }
@@ -97,7 +97,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return float
      */
-    public function avgAckIngressRate() : float
+    public function avgAckIngressRate(): float
     {
         return null;
     }
@@ -105,7 +105,7 @@ abstract class EmptyBackingQueueStatus implements BackingQueueStatusInterface, E
     /**
      * @return float
      */
-    public function avgAckEgressRate() : float
+    public function avgAckEgressRate(): float
     {
         return null;
     }

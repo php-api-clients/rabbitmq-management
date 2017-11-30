@@ -9,30 +9,30 @@ interface QueueTotalsInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function messages() : int;
+    public function messages(): int;
 
     /**
      * @return Details
      */
-    public function messagesDetails() : Details;
+    public function messagesDetails(): Details;
 
     /**
      * @return int
      */
-    public function messagesReady() : int;
+    public function messagesReady(): int;
 
     /**
      * @return Details
      */
-    public function messagesReadyDetails() : Details;
+    public function messagesReadyDetails(): Details;
 
     /**
      * @return int
      */
-    public function messagesUnacknowledged() : int;
+    public function messagesUnacknowledged(): int;
 
     /**
      * @return Details
      */
-    public function messagesUnacknowledgedDetails() : Details;
+    public function messagesUnacknowledgedDetails(): Details;
 }

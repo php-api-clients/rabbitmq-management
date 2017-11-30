@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Overview\Listener as BaseList
 
 class Listener extends BaseListener
 {
-    public function refresh() : Listener
+    public function refresh(): Listener
     {
         return $this->wait($this->callAsync('refresh'));
     }

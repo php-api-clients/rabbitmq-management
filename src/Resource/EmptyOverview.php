@@ -9,7 +9,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function managementVersion() : string
+    public function managementVersion(): string
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function ratesMode() : string
+    public function ratesMode(): string
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return array
      */
-    public function exchangeTypes() : array
+    public function exchangeTypes(): array
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function rabbitmqVersion() : string
+    public function rabbitmqVersion(): string
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function clusterName() : string
+    public function clusterName(): string
     {
         return null;
     }
@@ -49,7 +49,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function erlangVersion() : string
+    public function erlangVersion(): string
     {
         return null;
     }
@@ -57,7 +57,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function erlangFullVersion() : string
+    public function erlangFullVersion(): string
     {
         return null;
     }
@@ -65,7 +65,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return MessageStats
      */
-    public function messageStats() : MessageStats
+    public function messageStats(): MessageStats
     {
         return null;
     }
@@ -73,7 +73,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return Overview\QueueTotals
      */
-    public function queueTotals() : Overview\QueueTotals
+    public function queueTotals(): Overview\QueueTotals
     {
         return null;
     }
@@ -81,7 +81,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return Overview\ObjectTotals
      */
-    public function objectTotals() : Overview\ObjectTotals
+    public function objectTotals(): Overview\ObjectTotals
     {
         return null;
     }
@@ -89,7 +89,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return int
      */
-    public function statisticsDbEventQueue() : int
+    public function statisticsDbEventQueue(): int
     {
         return null;
     }
@@ -97,7 +97,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return null;
     }
@@ -105,7 +105,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return string
      */
-    public function statisticsDbNode() : string
+    public function statisticsDbNode(): string
     {
         return null;
     }
@@ -113,7 +113,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return array
      */
-    public function listeners() : array
+    public function listeners(): array
     {
         return null;
     }
@@ -121,7 +121,7 @@ abstract class EmptyOverview implements OverviewInterface, EmptyResourceInterfac
     /**
      * @return array
      */
-    public function contexts() : array
+    public function contexts(): array
     {
         return null;
     }

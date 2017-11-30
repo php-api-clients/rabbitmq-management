@@ -9,25 +9,25 @@ interface ObjectTotalsInterface extends ResourceInterface
     /**
      * @return int
      */
-    public function consumers() : int;
+    public function consumers(): int;
 
     /**
      * @return int
      */
-    public function queues() : int;
+    public function queues(): int;
 
     /**
      * @return int
      */
-    public function exchanges() : int;
+    public function exchanges(): int;
 
     /**
      * @return int
      */
-    public function connections() : int;
+    public function connections(): int;
 
     /**
      * @return int
      */
-    public function channels() : int;
+    public function channels(): int;
 }

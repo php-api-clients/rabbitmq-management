@@ -184,7 +184,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function recvOct() : int
+    public function recvOct(): int
     {
         return $this->recv_oct;
     }
@@ -192,7 +192,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function sendOct() : int
+    public function sendOct(): int
     {
         return $this->send_oct;
     }
@@ -200,7 +200,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return Details
      */
-    public function recvOctDetails() : Details
+    public function recvOctDetails(): Details
     {
         return $this->recv_oct_details;
     }
@@ -208,7 +208,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return Details
      */
-    public function sendOctDetails() : Details
+    public function sendOctDetails(): Details
     {
         return $this->send_oct_details;
     }
@@ -216,7 +216,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function recvCnt() : int
+    public function recvCnt(): int
     {
         return $this->recv_cnt;
     }
@@ -224,7 +224,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function sendCnt() : int
+    public function sendCnt(): int
     {
         return $this->send_cnt;
     }
@@ -232,7 +232,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function sendPend() : int
+    public function sendPend(): int
     {
         return $this->send_pend;
     }
@@ -240,7 +240,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function state() : string
+    public function state(): string
     {
         return $this->state;
     }
@@ -248,7 +248,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function channels() : int
+    public function channels(): int
     {
         return $this->channels;
     }
@@ -256,7 +256,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function type() : string
+    public function type(): string
     {
         return $this->type;
     }
@@ -264,7 +264,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function node() : string
+    public function node(): string
     {
         return $this->node;
     }
@@ -272,7 +272,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -280,7 +280,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function port() : int
+    public function port(): int
     {
         return $this->port;
     }
@@ -288,7 +288,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function peerPort() : int
+    public function peerPort(): int
     {
         return $this->peer_port;
     }
@@ -296,7 +296,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function host() : string
+    public function host(): string
     {
         return $this->host;
     }
@@ -304,7 +304,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function peerHost() : string
+    public function peerHost(): string
     {
         return $this->peer_host;
     }
@@ -312,7 +312,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return bool
      */
-    public function ssl() : bool
+    public function ssl(): bool
     {
         return $this->ssl;
     }
@@ -320,7 +320,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return mixed
      */
-    public function peerCertSubject() : mixed
+    public function peerCertSubject(): mixed
     {
         return $this->peer_cert_subject;
     }
@@ -328,7 +328,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return mixed
      */
-    public function peerCertIssuer() : mixed
+    public function peerCertIssuer(): mixed
     {
         return $this->peer_cert_issuer;
     }
@@ -336,7 +336,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return mixed
      */
-    public function peerCertValidity() : mixed
+    public function peerCertValidity(): mixed
     {
         return $this->peer_cert_validity;
     }
@@ -344,7 +344,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function authMechanism() : string
+    public function authMechanism(): string
     {
         return $this->auth_mechanism;
     }
@@ -352,7 +352,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return mixed
      */
-    public function sslProtocol() : mixed
+    public function sslProtocol(): mixed
     {
         return $this->ssl_protocol;
     }
@@ -360,7 +360,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return mixed
      */
-    public function sslKeyExchange() : mixed
+    public function sslKeyExchange(): mixed
     {
         return $this->ssl_key_exchange;
     }
@@ -368,7 +368,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return mixed
      */
-    public function sslCipher() : mixed
+    public function sslCipher(): mixed
     {
         return $this->ssl_cipher;
     }
@@ -376,7 +376,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return mixed
      */
-    public function sslHash() : mixed
+    public function sslHash(): mixed
     {
         return $this->ssl_hash;
     }
@@ -384,7 +384,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function protocol() : string
+    public function protocol(): string
     {
         return $this->protocol;
     }
@@ -392,7 +392,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function user() : string
+    public function user(): string
     {
         return $this->user;
     }
@@ -400,7 +400,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return string
      */
-    public function vhost() : string
+    public function vhost(): string
     {
         return $this->vhost;
     }
@@ -408,7 +408,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function timeout() : int
+    public function timeout(): int
     {
         return $this->timeout;
     }
@@ -416,7 +416,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function frameMax() : int
+    public function frameMax(): int
     {
         return $this->frame_max;
     }
@@ -424,7 +424,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function channelMax() : int
+    public function channelMax(): int
     {
         return $this->channel_max;
     }
@@ -432,7 +432,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return Connection\ClientProperties
      */
-    public function clientProperties() : Connection\ClientProperties
+    public function clientProperties(): Connection\ClientProperties
     {
         return $this->client_properties;
     }
@@ -440,7 +440,7 @@ abstract class Connection extends AbstractResource implements ConnectionInterfac
     /**
      * @return int
      */
-    public function connectedAt() : int
+    public function connectedAt(): int
     {
         return $this->connected_at;
     }

@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Queue\BackingQueueStatus as B
 
 class BackingQueueStatus extends BaseBackingQueueStatus
 {
-    public function refresh() : BackingQueueStatus
+    public function refresh(): BackingQueueStatus
     {
         return $this->wait($this->callAsync('refresh'));
     }

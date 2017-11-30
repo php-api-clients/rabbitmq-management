@@ -2,16 +2,17 @@
 
 namespace ApiClients\Tests\Client\RabbitMQ\Management\Resource\Sync;
 
-use ApiClients\Tools\ResourceTestUtilities\AbstractEmptyResourceTest;
 use ApiClients\Client\RabbitMQ\Management\Resource\Sync\EmptyMessageStats;
+use ApiClients\Tools\ResourceTestUtilities\AbstractEmptyResourceTest;
 
 final class EmptyMessageStatsTest extends AbstractEmptyResourceTest
 {
-    public function getSyncAsync() : string
+    public function getSyncAsync(): string
     {
         return 'Sync';
     }
-    public function getClass() : string
+
+    public function getClass(): string
     {
         return EmptyMessageStats::class;
     }

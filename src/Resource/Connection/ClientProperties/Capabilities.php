@@ -48,7 +48,7 @@ abstract class Capabilities extends AbstractResource implements CapabilitiesInte
     /**
      * @return bool
      */
-    public function publisherConfirms() : bool
+    public function publisherConfirms(): bool
     {
         return $this->publisher_confirms;
     }
@@ -56,7 +56,7 @@ abstract class Capabilities extends AbstractResource implements CapabilitiesInte
     /**
      * @return bool
      */
-    public function exchangeExchangeBindings() : bool
+    public function exchangeExchangeBindings(): bool
     {
         return $this->exchange_exchange_bindings;
     }
@@ -64,7 +64,7 @@ abstract class Capabilities extends AbstractResource implements CapabilitiesInte
     /**
      * @return bool
      */
-    public function consumerCancelNotify() : bool
+    public function consumerCancelNotify(): bool
     {
         return $this->consumer_cancel_notify;
     }
@@ -72,7 +72,7 @@ abstract class Capabilities extends AbstractResource implements CapabilitiesInte
     /**
      * @return bool
      */
-    public function authenticationFailureClose() : bool
+    public function authenticationFailureClose(): bool
     {
         return $this->authentication_failure_close;
     }
@@ -80,7 +80,7 @@ abstract class Capabilities extends AbstractResource implements CapabilitiesInte
     /**
      * @return bool
      */
-    public function basicNack() : bool
+    public function basicNack(): bool
     {
         return $this->basic_nack;
     }
@@ -88,7 +88,7 @@ abstract class Capabilities extends AbstractResource implements CapabilitiesInte
     /**
      * @return bool
      */
-    public function connectionBlocked() : bool
+    public function connectionBlocked(): bool
     {
         return $this->connection_blocked;
     }

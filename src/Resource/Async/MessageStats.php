@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\MessageStats as BaseMessageSt
 
 class MessageStats extends BaseMessageStats
 {
-    public function refresh() : MessageStats
+    public function refresh(): MessageStats
     {
         return $this->wait($this->callAsync('refresh'));
     }

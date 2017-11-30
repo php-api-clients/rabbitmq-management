@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Overview\ObjectTotals as Base
 
 class ObjectTotals extends BaseObjectTotals
 {
-    public function refresh() : ObjectTotals
+    public function refresh(): ObjectTotals
     {
         return $this->wait($this->callAsync('refresh'));
     }

@@ -9,7 +9,7 @@ abstract class EmptyObjectTotals implements ObjectTotalsInterface, EmptyResource
     /**
      * @return int
      */
-    public function consumers() : int
+    public function consumers(): int
     {
         return null;
     }
@@ -17,7 +17,7 @@ abstract class EmptyObjectTotals implements ObjectTotalsInterface, EmptyResource
     /**
      * @return int
      */
-    public function queues() : int
+    public function queues(): int
     {
         return null;
     }
@@ -25,7 +25,7 @@ abstract class EmptyObjectTotals implements ObjectTotalsInterface, EmptyResource
     /**
      * @return int
      */
-    public function exchanges() : int
+    public function exchanges(): int
     {
         return null;
     }
@@ -33,7 +33,7 @@ abstract class EmptyObjectTotals implements ObjectTotalsInterface, EmptyResource
     /**
      * @return int
      */
-    public function connections() : int
+    public function connections(): int
     {
         return null;
     }
@@ -41,7 +41,7 @@ abstract class EmptyObjectTotals implements ObjectTotalsInterface, EmptyResource
     /**
      * @return int
      */
-    public function channels() : int
+    public function channels(): int
     {
         return null;
     }

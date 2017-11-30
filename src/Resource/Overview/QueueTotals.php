@@ -49,7 +49,7 @@ abstract class QueueTotals extends AbstractResource implements QueueTotalsInterf
     /**
      * @return int
      */
-    public function messages() : int
+    public function messages(): int
     {
         return $this->messages;
     }
@@ -57,7 +57,7 @@ abstract class QueueTotals extends AbstractResource implements QueueTotalsInterf
     /**
      * @return Details
      */
-    public function messagesDetails() : Details
+    public function messagesDetails(): Details
     {
         return $this->messages_details;
     }
@@ -65,7 +65,7 @@ abstract class QueueTotals extends AbstractResource implements QueueTotalsInterf
     /**
      * @return int
      */
-    public function messagesReady() : int
+    public function messagesReady(): int
     {
         return $this->messages_ready;
     }
@@ -73,7 +73,7 @@ abstract class QueueTotals extends AbstractResource implements QueueTotalsInterf
     /**
      * @return Details
      */
-    public function messagesReadyDetails() : Details
+    public function messagesReadyDetails(): Details
     {
         return $this->messages_ready_details;
     }
@@ -81,7 +81,7 @@ abstract class QueueTotals extends AbstractResource implements QueueTotalsInterf
     /**
      * @return int
      */
-    public function messagesUnacknowledged() : int
+    public function messagesUnacknowledged(): int
     {
         return $this->messages_unacknowledged;
     }
@@ -89,7 +89,7 @@ abstract class QueueTotals extends AbstractResource implements QueueTotalsInterf
     /**
      * @return Details
      */
-    public function messagesUnacknowledgedDetails() : Details
+    public function messagesUnacknowledgedDetails(): Details
     {
         return $this->messages_unacknowledged_details;
     }

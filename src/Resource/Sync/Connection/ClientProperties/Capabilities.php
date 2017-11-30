@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Connection\ClientProperties\C
 
 class Capabilities extends BaseCapabilities
 {
-    public function refresh() : Capabilities
+    public function refresh(): Capabilities
     {
         return $this->wait($this->callAsync('refresh'));
     }

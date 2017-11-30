@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Overview\ExchangeType as Base
 
 class ExchangeType extends BaseExchangeType
 {
-    public function refresh() : ExchangeType
+    public function refresh(): ExchangeType
     {
         return $this->wait($this->callAsync('refresh'));
     }

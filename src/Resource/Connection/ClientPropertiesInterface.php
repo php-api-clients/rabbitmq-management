@@ -9,30 +9,30 @@ interface ClientPropertiesInterface extends ResourceInterface
     /**
      * @return string
      */
-    public function product() : string;
+    public function product(): string;
 
     /**
      * @return string
      */
-    public function version() : string;
+    public function version(): string;
 
     /**
      * @return string
      */
-    public function platform() : string;
+    public function platform(): string;
 
     /**
      * @return string
      */
-    public function copyright() : string;
+    public function copyright(): string;
 
     /**
      * @return string
      */
-    public function information() : string;
+    public function information(): string;
 
     /**
      * @return Connection\ClientProperties\Capabilities
      */
-    public function capabilities() : Connection\ClientProperties\Capabilities;
+    public function capabilities(): Connection\ClientProperties\Capabilities;
 }

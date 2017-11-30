@@ -9,20 +9,20 @@ interface ContextInterface extends ResourceInterface
     /**
      * @return string
      */
-    public function node() : string;
+    public function node(): string;
 
     /**
      * @return string
      */
-    public function description() : string;
+    public function description(): string;
 
     /**
      * @return string
      */
-    public function path() : string;
+    public function path(): string;
 
     /**
      * @return string
      */
-    public function port() : string;
+    public function port(): string;
 }

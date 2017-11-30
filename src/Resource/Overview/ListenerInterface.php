@@ -9,20 +9,20 @@ interface ListenerInterface extends ResourceInterface
     /**
      * @return string
      */
-    public function node() : string;
+    public function node(): string;
 
     /**
      * @return string
      */
-    public function protocol() : string;
+    public function protocol(): string;
 
     /**
      * @return string
      */
-    public function ipAddress() : string;
+    public function ipAddress(): string;
 
     /**
      * @return int
      */
-    public function port() : int;
+    public function port(): int;
 }

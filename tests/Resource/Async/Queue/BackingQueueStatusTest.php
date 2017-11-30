@@ -2,21 +2,23 @@
 
 namespace ApiClients\Tests\Client\RabbitMQ\Management\Resource\Async\Queue;
 
-use ApiClients\Tools\ResourceTestUtilities\AbstractResourceTest;
 use ApiClients\Client\RabbitMQ\Management\ApiSettings;
 use ApiClients\Client\RabbitMQ\Management\Resource\Queue\BackingQueueStatus;
+use ApiClients\Tools\ResourceTestUtilities\AbstractResourceTest;
 
 class BackingQueueStatusTest extends AbstractResourceTest
 {
-    public function getSyncAsync() : string
+    public function getSyncAsync(): string
     {
         return 'Async';
     }
-    public function getClass() : string
+
+    public function getClass(): string
     {
         return BackingQueueStatus::class;
     }
-    public function getNamespace() : string
+
+    public function getNamespace(): string
     {
         return Apisettings::NAMESPACE;
     }

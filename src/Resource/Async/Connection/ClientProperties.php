@@ -6,7 +6,7 @@ use ApiClients\Client\RabbitMQ\Management\Resource\Connection\ClientProperties a
 
 class ClientProperties extends BaseClientProperties
 {
-    public function refresh() : ClientProperties
+    public function refresh(): ClientProperties
     {
         return $this->wait($this->callAsync('refresh'));
     }

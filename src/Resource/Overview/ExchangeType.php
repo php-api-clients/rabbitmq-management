@@ -28,7 +28,7 @@ abstract class ExchangeType extends AbstractResource implements ExchangeTypeInte
     /**
      * @return string
      */
-    public function name() : string
+    public function name(): string
     {
         return $this->name;
     }
@@ -36,7 +36,7 @@ abstract class ExchangeType extends AbstractResource implements ExchangeTypeInte
     /**
      * @return string
      */
-    public function description() : string
+    public function description(): string
     {
         return $this->description;
     }
@@ -44,7 +44,7 @@ abstract class ExchangeType extends AbstractResource implements ExchangeTypeInte
     /**
      * @return bool
      */
-    public function enabled() : bool
+    public function enabled(): bool
     {
         return $this->enabled;
     }

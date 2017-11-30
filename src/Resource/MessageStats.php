@@ -148,7 +148,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function deliver() : int
+    public function deliver(): int
     {
         return $this->deliver;
     }
@@ -156,7 +156,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function deliverDetails() : Details
+    public function deliverDetails(): Details
     {
         return $this->deliver_details;
     }
@@ -164,7 +164,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function deliverNoAck() : int
+    public function deliverNoAck(): int
     {
         return $this->deliver_no_ack;
     }
@@ -172,7 +172,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function deliverNoAckDetails() : Details
+    public function deliverNoAckDetails(): Details
     {
         return $this->deliver_no_ack_details;
     }
@@ -180,7 +180,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function get() : int
+    public function get(): int
     {
         return $this->get;
     }
@@ -188,7 +188,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function getDetails() : Details
+    public function getDetails(): Details
     {
         return $this->get_details;
     }
@@ -196,7 +196,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function getNoAck() : int
+    public function getNoAck(): int
     {
         return $this->get_no_ack;
     }
@@ -204,7 +204,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function getNoAckDetails() : Details
+    public function getNoAckDetails(): Details
     {
         return $this->get_no_ack_details;
     }
@@ -212,7 +212,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function publish() : int
+    public function publish(): int
     {
         return $this->publish;
     }
@@ -220,7 +220,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function publishDetails() : Details
+    public function publishDetails(): Details
     {
         return $this->publish_details;
     }
@@ -228,7 +228,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function publishIn() : int
+    public function publishIn(): int
     {
         return $this->publish_in;
     }
@@ -236,7 +236,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function publishInDetails() : Details
+    public function publishInDetails(): Details
     {
         return $this->publish_in_details;
     }
@@ -244,7 +244,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function publishOut() : int
+    public function publishOut(): int
     {
         return $this->publish_out;
     }
@@ -252,7 +252,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function publishOutDetails() : Details
+    public function publishOutDetails(): Details
     {
         return $this->publish_out_details;
     }
@@ -260,7 +260,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function ack() : int
+    public function ack(): int
     {
         return $this->ack;
     }
@@ -268,7 +268,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function ackDetails() : Details
+    public function ackDetails(): Details
     {
         return $this->ack_details;
     }
@@ -276,7 +276,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function deliverGet() : int
+    public function deliverGet(): int
     {
         return $this->deliver_get;
     }
@@ -284,7 +284,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function deliverGetDetails() : Details
+    public function deliverGetDetails(): Details
     {
         return $this->deliver_get_details;
     }
@@ -292,7 +292,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function confirm() : int
+    public function confirm(): int
     {
         return $this->confirm;
     }
@@ -300,7 +300,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function confirmDetails() : Details
+    public function confirmDetails(): Details
     {
         return $this->confirm_details;
     }
@@ -308,7 +308,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function returnUnroutable() : int
+    public function returnUnroutable(): int
     {
         return $this->return_unroutable;
     }
@@ -316,7 +316,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function returnUnroutableDetails() : Details
+    public function returnUnroutableDetails(): Details
     {
         return $this->return_unroutable_details;
     }
@@ -324,7 +324,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return int
      */
-    public function redeliver() : int
+    public function redeliver(): int
     {
         return $this->redeliver;
     }
@@ -332,7 +332,7 @@ abstract class MessageStats extends AbstractResource implements MessageStatsInte
     /**
      * @return Details
      */
-    public function redeliverDetails() : Details
+    public function redeliverDetails(): Details
     {
         return $this->redeliver_details;
     }
