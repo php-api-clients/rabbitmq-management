@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe41d19cde0a74e70194d52e207ef5a6",
+    "content-hash": "eac845faab4d12da7d1e1684679d9a78",
     "packages": [
         {
             "name": "api-clients/client-services",
