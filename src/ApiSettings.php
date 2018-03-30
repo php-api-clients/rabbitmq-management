@@ -48,7 +48,7 @@ final class ApiSettings
         $options = self::TRANSPORT_OPTIONS;
         $transportOptions = $options[Options::TRANSPORT_OPTIONS];
         $transportOptions[TransportOptions::SCHEMA] = $url['scheme'];
-        $transportOptions[TransportOptions::HOST] = $url['host'] . ':' . $url['port'];
+        $transportOptions[TransportOptions::HOST] = $url['host'];
         $transportOptions[TransportOptions::PORT] = $url['port'];
         $transportOptions[TransportOptions::PATH] = $url['path'] . 'api/';
         $transportOptions[TransportOptions::HEADERS]['Authorization'] = $auth;
