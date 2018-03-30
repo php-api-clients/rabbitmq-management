@@ -76,7 +76,7 @@ final class AsyncClient implements AsyncClientInterface
             new SimpleRequestCommand('overview')
         )->then(function (ResponseInterface $response) {
             return resolve($this->client->handle(
-                new HydrateCommand('Overview', $response->getBody()->getJson())
+                new HydrateCommand('Overview', $response->getBody()->getParsedContents())
             ));
         });
     }
@@ -91,7 +91,7 @@ final class AsyncClient implements AsyncClientInterface
             return Promise::toObservable($this->client->handle(
                 new SimpleRequestCommand('queues')
             ))->flatMap(function (ResponseInterface $response) {
-                return observableFromArray($response->getBody()->getJson());
+                return observableFromArray($response->getBody()->getParsedContents());
             })->flatMap(function ($queue) {
                 return Promise::toObservable($this->client->handle(
                     new HydrateCommand('Queue', $queue)
@@ -114,7 +114,7 @@ final class AsyncClient implements AsyncClientInterface
         return Promise::toObservable($this->client->handle(
             new SimpleRequestCommand('connections')
         ))->flatMap(function (ResponseInterface $response) {
-            return observableFromArray($response->getBody()->getJson());
+            return observableFromArray($response->getBody()->getParsedContents());
         })->flatMap(function ($connection) {
             return Promise::toObservable($this->client->handle(
                 new HydrateCommand('Connection', $connection)
