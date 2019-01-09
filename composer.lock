@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "eac845faab4d12da7d1e1684679d9a78",
@@ -91,7 +91,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-Jan Kiewiet",
+                    "name": "Cees-jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -139,7 +139,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-Jan Kiewiet",
+                    "name": "Cees-jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -332,7 +332,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-Jan Kiewiet",
+                    "name": "Cees-jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -375,7 +375,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-Jan Kiewiet",
+                    "name": "Cees-jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -521,7 +521,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-Jan Kiewiet",
+                    "name": "Cees-jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -2269,7 +2269,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-Jan Kiewiet",
+                    "name": "Cees-jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -3065,16 +3065,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.11",
+            "version": "v2.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8"
+                "reference": "0a58ef6e3146256cc3dc7cc393927bcc7d1b72db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/5da4d3c796c275c55f057af5a643ae297d96b4d8",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/0a58ef6e3146256cc3dc7cc393927bcc7d1b72db",
+                "reference": "0a58ef6e3146256cc3dc7cc393927bcc7d1b72db",
                 "shasum": ""
             },
             "require": {
@@ -3106,10 +3106,11 @@
             "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
             "keywords": [
                 "csprng",
+                "polyfill",
                 "pseudorandom",
                 "random"
             ],
-            "time": "2017-09-27T21:40:39+00:00"
+            "time": "2019-01-03T20:59:08+00:00"
         },
         {
             "name": "phake/phake",
@@ -3299,6 +3300,9 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause|MIT"
+            ],
             "authors": [
                 {
                     "name": "Kore Nordmann",
