@@ -8,27 +8,27 @@
     "packages": [
         {
             "name": "api-clients/client-services",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/client-services.git",
-                "reference": "d33482017be7f40b41adcad2dd0d378c4348835d"
+                "reference": "a2c4d317b822455a291be6a51a89fded710d984b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/client-services/zipball/d33482017be7f40b41adcad2dd0d378c4348835d",
-                "reference": "d33482017be7f40b41adcad2dd0d378c4348835d",
+                "url": "https://api.github.com/repos/php-api-clients/client-services/zipball/a2c4d317b822455a291be6a51a89fded710d984b",
+                "reference": "a2c4d317b822455a291be6a51a89fded710d984b",
                 "shasum": ""
             },
             "require": {
                 "api-clients/hydrator": "^1.0",
-                "api-clients/middleware-json": "^3.0 || ^2.0 || ^1.0",
                 "api-clients/rx": "^2.1",
-                "api-clients/transport": "^3.0 || ^2.0 || ^1.0",
+                "api-clients/transport": "^3.1",
                 "igorw/get-in": "^1.0",
                 "php": "^7.0"
             },
             "require-dev": {
+                "api-clients/middleware-json": "^3.1",
                 "api-clients/test-utilities": "^3.0.1"
             },
             "type": "library",
@@ -48,20 +48,20 @@
                 }
             ],
             "description": "Generic client services",
-            "time": "2017-07-22T22:17:30+00:00"
+            "time": "2017-12-19T21:52:26+00:00"
         },
         {
             "name": "api-clients/command-bus",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/command-bus.git",
-                "reference": "e1d9145b09d5e79094fd42260fb3ee1e8d77a13b"
+                "reference": "b3974b5a1ebe3c391b728c59542bfa4231902531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/command-bus/zipball/e1d9145b09d5e79094fd42260fb3ee1e8d77a13b",
-                "reference": "e1d9145b09d5e79094fd42260fb3ee1e8d77a13b",
+                "url": "https://api.github.com/repos/php-api-clients/command-bus/zipball/b3974b5a1ebe3c391b728c59542bfa4231902531",
+                "reference": "b3974b5a1ebe3c391b728c59542bfa4231902531",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +69,7 @@
                 "igorw/get-in": "^1.0",
                 "joshdifabio/composed": "^1.0",
                 "league/tactician": "^1.0",
-                "league/tactician-container": "^1.0",
+                "league/tactician-container": "^2.0 || ^1.0",
                 "php": "^7.0",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4.2",
                 "wyrihaximus/tactician-command-handler-mapper": "^1.0",
@@ -91,12 +91,12 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-jan Kiewiet",
+                    "name": "Cees-Jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
             "description": "Light weight wrapper around league/tactician adding promised based interface(s) and next tick execution",
-            "time": "2017-11-01T16:24:52+00:00"
+            "time": "2017-12-24T23:31:24+00:00"
         },
         {
             "name": "api-clients/foundation",
@@ -139,7 +139,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-jan Kiewiet",
+                    "name": "Cees-Jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -148,16 +148,16 @@
         },
         {
             "name": "api-clients/hydrator",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/hydrator.git",
-                "reference": "1cde8c66c4d9d52f9f6a9db03334c2214d98342e"
+                "reference": "09a29c8a9cc1450aeb532c481741ced67d529a87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/hydrator/zipball/1cde8c66c4d9d52f9f6a9db03334c2214d98342e",
-                "reference": "1cde8c66c4d9d52f9f6a9db03334c2214d98342e",
+                "url": "https://api.github.com/repos/php-api-clients/hydrator/zipball/09a29c8a9cc1450aeb532c481741ced67d529a87",
+                "reference": "09a29c8a9cc1450aeb532c481741ced67d529a87",
                 "shasum": ""
             },
             "require": {
@@ -200,7 +200,7 @@
                 }
             ],
             "description": "Hydrator wrapping ocramius/generated-hydrator specifically for api clients",
-            "time": "2017-11-30T01:34:35+00:00"
+            "time": "2018-03-19T20:11:13+00:00"
         },
         {
             "name": "api-clients/json",
@@ -332,7 +332,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-jan Kiewiet",
+                    "name": "Cees-Jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -472,16 +472,16 @@
         },
         {
             "name": "api-clients/transport",
-            "version": "3.0.3",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/transport.git",
-                "reference": "8e458a7cb98557078ce693dd80d17fc5deec06c6"
+                "reference": "30fdab79310655412fe3ab94cec6776cd9f1d517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/transport/zipball/8e458a7cb98557078ce693dd80d17fc5deec06c6",
-                "reference": "8e458a7cb98557078ce693dd80d17fc5deec06c6",
+                "url": "https://api.github.com/repos/php-api-clients/transport/zipball/30fdab79310655412fe3ab94cec6776cd9f1d517",
+                "reference": "30fdab79310655412fe3ab94cec6776cd9f1d517",
                 "shasum": ""
             },
             "require": {
@@ -521,35 +521,35 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-jan Kiewiet",
+                    "name": "Cees-Jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
             "description": "Middleware infused clue/buzz-react",
-            "time": "2017-10-25T06:00:27+00:00"
+            "time": "2018-07-09T16:52:49+00:00"
         },
         {
             "name": "clue/block-react",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-block-react.git",
-                "reference": "966c255580ec7a0259338798ddb89f77e121fe9e"
+                "url": "https://github.com/clue/reactphp-block.git",
+                "reference": "a4a5cd64ded3b15affa168a2419fa4eda08b96aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-block-react/zipball/966c255580ec7a0259338798ddb89f77e121fe9e",
-                "reference": "966c255580ec7a0259338798ddb89f77e121fe9e",
+                "url": "https://api.github.com/repos/clue/reactphp-block/zipball/a4a5cd64ded3b15affa168a2419fa4eda08b96aa",
+                "reference": "a4a5cd64ded3b15affa168a2419fa4eda08b96aa",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
-                "react/promise": "~2.1|~1.2",
-                "react/promise-timer": "~1.0"
+                "react/promise": "^2.7 || ^1.2.1",
+                "react/promise-timer": "^1.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.0 || ^4.8"
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -567,48 +567,52 @@
                     "email": "christian@lueck.tv"
                 }
             ],
-            "description": "Integrate async React PHP components into your blocking environment",
-            "homepage": "https://github.com/clue/php-block-react",
+            "description": "Lightweight library that eases integrating async components built for ReactPHP in a traditional, blocking environment.",
+            "homepage": "https://github.com/clue/reactphp-block",
             "keywords": [
                 "async",
+                "await",
                 "blocking",
                 "event loop",
                 "promise",
                 "reactphp",
+                "sleep",
                 "synchronous"
             ],
-            "time": "2017-08-03T13:14:15+00:00"
+            "time": "2018-06-14T08:50:53+00:00"
         },
         {
             "name": "clue/buzz-react",
-            "version": "v2.2.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-buzz-react.git",
-                "reference": "3fec9c17ffd4f7443f853de986e734b4c131f98e"
+                "url": "https://github.com/clue/reactphp-buzz.git",
+                "reference": "758a731c626eac2b88bad5359431650ef7384a55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-buzz-react/zipball/3fec9c17ffd4f7443f853de986e734b4c131f98e",
-                "reference": "3fec9c17ffd4f7443f853de986e734b4c131f98e",
+                "url": "https://api.github.com/repos/clue/reactphp-buzz/zipball/758a731c626eac2b88bad5359431650ef7384a55",
+                "reference": "758a731c626eac2b88bad5359431650ef7384a55",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4",
+                "php": ">=5.3",
                 "psr/http-message": "^1.0",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
-                "react/http-client": "^0.5.6",
-                "react/promise": "^2.2.1",
+                "react/http-client": "^0.5.8",
+                "react/promise": "^2.2.1 || ^1.2.1",
                 "react/promise-stream": "^1.0 || ^0.1.1",
-                "react/socket": "^1.0 || ^0.8.4",
+                "react/promise-timer": "^1.2",
+                "react/socket": "^1.1",
                 "react/stream": "^1.0 || ^0.7",
                 "ringcentral/psr7": "^1.2"
             },
             "require-dev": {
                 "clue/block-react": "^1.0",
+                "clue/http-proxy-react": "^1.3",
                 "clue/socks-react": "^0.8",
-                "phpunit/phpunit": "^4.5",
-                "react/http": "^0.7.2"
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35",
+                "react/http": "^0.8"
             },
             "type": "library",
             "autoload": {
@@ -627,7 +631,7 @@
                 }
             ],
             "description": "Simple, async PSR-7 HTTP client for concurrently processing any number of HTTP requests, built on top of ReactPHP",
-            "homepage": "https://github.com/clue/php-buzz-react",
+            "homepage": "https://github.com/clue/reactphp-buzz",
             "keywords": [
                 "async",
                 "http",
@@ -635,7 +639,7 @@
                 "psr-7",
                 "reactphp"
             ],
-            "time": "2017-10-24T17:53:40+00:00"
+            "time": "2018-10-24T07:47:33+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -939,73 +943,6 @@
             "time": "2017-07-23T21:35:13+00:00"
         },
         {
-            "name": "guzzlehttp/psr7",
-            "version": "1.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "9f83dded91781a01c63574e387eaa769be769115"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
-                "reference": "9f83dded91781a01c63574e387eaa769be769115",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5"
-            },
-            "provide": {
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Tobias Schultze",
-                    "homepage": "https://github.com/Tobion"
-                }
-            ],
-            "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-                "message",
-                "psr-7",
-                "request",
-                "response",
-                "stream",
-                "uri",
-                "url"
-            ],
-            "time": "2018-12-04T20:46:45+00:00"
-        },
-        {
             "name": "igorw/get-in",
             "version": "v1.0.3",
             "source": {
@@ -1152,25 +1089,25 @@
         },
         {
             "name": "league/tactician-container",
-            "version": "v1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/tactician-container.git",
-                "reference": "4b75997f6655a574c4b950c7c91714fde9f31d84"
+                "reference": "d1a5d884e072b8cafbff802d07766076eb2ffcb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/tactician-container/zipball/4b75997f6655a574c4b950c7c91714fde9f31d84",
-                "reference": "4b75997f6655a574c4b950c7c91714fde9f31d84",
+                "url": "https://api.github.com/repos/thephpleague/tactician-container/zipball/d1a5d884e072b8cafbff802d07766076eb2ffcb0",
+                "reference": "d1a5d884e072b8cafbff802d07766076eb2ffcb0",
                 "shasum": ""
             },
             "require": {
-                "container-interop/container-interop": "^1.1",
                 "league/tactician": "^1.0",
-                "php": ">=5.5"
+                "php": ">=5.5",
+                "psr/container": "^1.0"
             },
             "require-dev": {
-                "league/container": "~2.0",
+                "league/container": "~2.3",
                 "phpunit/phpunit": "~4.3",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -1190,7 +1127,7 @@
                     "homepage": "http://futurepixels.co.uk"
                 }
             ],
-            "description": "Tactician integration for any container implementing the container-interop interface",
+            "description": "Tactician integration for any container implementing PSR-11",
             "keywords": [
                 "container",
                 "container-interop",
@@ -1199,7 +1136,7 @@
                 "league",
                 "tactician"
             ],
-            "time": "2015-12-31T12:41:26+00:00"
+            "time": "2017-04-13T06:27:12+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1660,105 +1597,70 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
-            "name": "ralouphie/getallheaders",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7.0",
-                "satooshi/php-coveralls": ">=1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/getallheaders.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ralph Khattar",
-                    "email": "ralph.khattar@gmail.com"
-                }
-            ],
-            "description": "A polyfill for getallheaders.",
-            "time": "2016-02-11T07:05:27+00:00"
-        },
-        {
             "name": "react/cache",
-            "version": "v0.4.1",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/cache.git",
-                "reference": "558f614891341b1d817a8cdf9a358948ec49638f"
+                "reference": "7d7da7fb7574d471904ba357b39bbf110ccdbf66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/cache/zipball/558f614891341b1d817a8cdf9a358948ec49638f",
-                "reference": "558f614891341b1d817a8cdf9a358948ec49638f",
+                "url": "https://api.github.com/repos/reactphp/cache/zipball/7d7da7fb7574d471904ba357b39bbf110ccdbf66",
+                "reference": "7d7da7fb7574d471904ba357b39bbf110ccdbf66",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "react/promise": "~2.0|~1.1"
             },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "React\\Cache\\": "src\\"
+                    "React\\Cache\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Async caching.",
+            "description": "Async, Promise-based cache interface for ReactPHP",
             "keywords": [
-                "cache"
+                "cache",
+                "caching",
+                "promise",
+                "reactphp"
             ],
-            "time": "2016-02-25T18:17:16+00:00"
+            "time": "2018-06-25T12:52:40+00:00"
         },
         {
             "name": "react/dns",
-            "version": "v0.4.11",
+            "version": "v0.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns.git",
-                "reference": "8558bba4f2784aa997670d15fc6f7461a8eb4e53"
+                "reference": "0a0bedfec72b38406413c6ea01e1c015bd0bf72b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/8558bba4f2784aa997670d15fc6f7461a8eb4e53",
-                "reference": "8558bba4f2784aa997670d15fc6f7461a8eb4e53",
+                "url": "https://api.github.com/repos/reactphp/dns/zipball/0a0bedfec72b38406413c6ea01e1c015bd0bf72b",
+                "reference": "0a0bedfec72b38406413c6ea01e1c015bd0bf72b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "react/cache": "~0.4.0|~0.3.0",
+                "react/cache": "^0.5 || ^0.4 || ^0.3",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
                 "react/promise": "^2.1 || ^1.2.1",
                 "react/promise-timer": "^1.2",
-                "react/socket": "^1.0 || ^0.8 || ^0.7 || ^0.6 || ^0.5 || ^0.4.4",
                 "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4.5"
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
-                "phpunit/phpunit": "^5.0 || ^4.8.10"
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -1777,7 +1679,7 @@
                 "dns-resolver",
                 "reactphp"
             ],
-            "time": "2017-08-25T08:22:48+00:00"
+            "time": "2018-11-11T11:21:13+00:00"
         },
         {
             "name": "react/event-loop",
@@ -1822,29 +1724,31 @@
         },
         {
             "name": "react/http-client",
-            "version": "v0.5.6",
+            "version": "v0.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/http-client.git",
-                "reference": "eb521c0f9de9b9780b9ced78d90314085632377f"
+                "reference": "f8e81a022b61938e0b37c94c6351fc170b7d87f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/http-client/zipball/eb521c0f9de9b9780b9ced78d90314085632377f",
-                "reference": "eb521c0f9de9b9780b9ced78d90314085632377f",
+                "url": "https://api.github.com/repos/reactphp/http-client/zipball/f8e81a022b61938e0b37c94c6351fc170b7d87f6",
+                "reference": "f8e81a022b61938e0b37c94c6351fc170b7d87f6",
                 "shasum": ""
             },
             "require": {
-                "evenement/evenement": "^3.0 || ^2.0",
-                "guzzlehttp/psr7": "^1.0",
-                "php": ">=5.4.0",
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=5.3.0",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
-                "react/promise": "~2.2",
+                "react/promise": "^2.1 || ^1.2.1",
                 "react/socket": "^1.0 || ^0.8.4",
-                "react/stream": "^1.0 || ^0.7.1"
+                "react/stream": "^1.0 || ^0.7.1",
+                "ringcentral/psr7": "^1.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.0 || ^4.8.10"
+                "clue/block-react": "^1.2",
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35",
+                "react/promise-stream": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -1860,7 +1764,7 @@
             "keywords": [
                 "http"
             ],
-            "time": "2017-09-17T14:41:00+00:00"
+            "time": "2018-04-10T11:38:54+00:00"
         },
         {
             "name": "react/promise",
@@ -1910,16 +1814,16 @@
         },
         {
             "name": "react/promise-stream",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise-stream.git",
-                "reference": "77ca2a233db59d671864c88e2b716d875cfbeb1f"
+                "reference": "00e269d611e9c9a29356aef64c07f7e513e73dc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise-stream/zipball/77ca2a233db59d671864c88e2b716d875cfbeb1f",
-                "reference": "77ca2a233db59d671864c88e2b716d875cfbeb1f",
+                "url": "https://api.github.com/repos/reactphp/promise-stream/zipball/00e269d611e9c9a29356aef64c07f7e513e73dc9",
+                "reference": "00e269d611e9c9a29356aef64c07f7e513e73dc9",
                 "shasum": ""
             },
             "require": {
@@ -1929,7 +1833,7 @@
             },
             "require-dev": {
                 "clue/block-react": "^1.0",
-                "phpunit/phpunit": "^4.8",
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
                 "react/promise-timer": "^1.0"
             },
@@ -1962,7 +1866,7 @@
                 "stream",
                 "unwrap"
             ],
-            "time": "2017-11-28T18:31:39+00:00"
+            "time": "2017-12-22T12:02:05+00:00"
         },
         {
             "name": "react/promise-timer",
@@ -2019,26 +1923,26 @@
         },
         {
             "name": "react/socket",
-            "version": "v0.8.6",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket.git",
-                "reference": "2e8660111d14df908a913a058bce4a1786de489f"
+                "reference": "23b7372bb25cea934f6124f5bdac34e30161959e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket/zipball/2e8660111d14df908a913a058bce4a1786de489f",
-                "reference": "2e8660111d14df908a913a058bce4a1786de489f",
+                "url": "https://api.github.com/repos/reactphp/socket/zipball/23b7372bb25cea934f6124f5bdac34e30161959e",
+                "reference": "23b7372bb25cea934f6124f5bdac34e30161959e",
                 "shasum": ""
             },
             "require": {
                 "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
                 "php": ">=5.3.0",
-                "react/dns": "^0.4.11",
+                "react/dns": "^0.4.13",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
-                "react/promise": "^2.1 || ^1.2",
-                "react/promise-timer": "~1.0",
-                "react/stream": "^1.0 || ^0.7.1"
+                "react/promise": "^2.6.0 || ^1.2.1",
+                "react/promise-timer": "^1.4.0",
+                "react/stream": "^1.1"
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
@@ -2062,33 +1966,30 @@
                 "reactphp",
                 "stream"
             ],
-            "time": "2017-11-18T16:47:56+00:00"
+            "time": "2019-01-07T14:10:13+00:00"
         },
         {
             "name": "react/stream",
-            "version": "v0.7.5",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream.git",
-                "reference": "a41bbffdda5e3f4282012f8e346cef48ecb28b24"
+                "reference": "50426855f7a77ddf43b9266c22320df5bf6c6ce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/stream/zipball/a41bbffdda5e3f4282012f8e346cef48ecb28b24",
-                "reference": "a41bbffdda5e3f4282012f8e346cef48ecb28b24",
+                "url": "https://api.github.com/repos/reactphp/stream/zipball/50426855f7a77ddf43b9266c22320df5bf6c6ce6",
+                "reference": "50426855f7a77ddf43b9266c22320df5bf6c6ce6",
                 "shasum": ""
             },
             "require": {
                 "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
                 "php": ">=5.3.8",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3"
+                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5"
             },
             "require-dev": {
                 "clue/stream-filter": "~1.2",
                 "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
-            },
-            "suggest": {
-                "react/event-loop": "^0.4"
             },
             "type": "library",
             "autoload": {
@@ -2111,7 +2012,7 @@
                 "stream",
                 "writable"
             ],
-            "time": "2017-11-20T11:55:48+00:00"
+            "time": "2019-01-01T16:15:09+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -2180,16 +2081,16 @@
         },
         {
             "name": "ringcentral/psr7",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ringcentral/psr7.git",
-                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303"
+                "reference": "dcd84bbb49b96c616d1dcc8bfb9bef3f2cd53d1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ringcentral/psr7/zipball/2594fb47cdc659f3fcf0aa1559b7355460555303",
-                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303",
+                "url": "https://api.github.com/repos/ringcentral/psr7/zipball/dcd84bbb49b96c616d1dcc8bfb9bef3f2cd53d1c",
+                "reference": "dcd84bbb49b96c616d1dcc8bfb9bef3f2cd53d1c",
                 "shasum": ""
             },
             "require": {
@@ -2234,7 +2135,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-03-25T17:36:49+00:00"
+            "time": "2018-01-15T21:00:49+00:00"
         },
         {
             "name": "wyrihaximus/doctrine-annotation-autoloader",
@@ -2310,7 +2211,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-jan Kiewiet",
+                    "name": "Cees-Jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -2319,16 +2220,16 @@
         },
         {
             "name": "wyrihaximus/ticking-promise",
-            "version": "1.6.2",
+            "version": "1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/TickingPromise.git",
-                "reference": "6b9f9abc74bb52ba3a479f8d3b8889579cd2cd6f"
+                "reference": "4bb99024402bb7526de8880f3dab0c1f0858def5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/TickingPromise/zipball/6b9f9abc74bb52ba3a479f8d3b8889579cd2cd6f",
-                "reference": "6b9f9abc74bb52ba3a479f8d3b8889579cd2cd6f",
+                "url": "https://api.github.com/repos/WyriHaximus/TickingPromise/zipball/4bb99024402bb7526de8880f3dab0c1f0858def5",
+                "reference": "4bb99024402bb7526de8880f3dab0c1f0858def5",
                 "shasum": ""
             },
             "require": {
@@ -2362,7 +2263,7 @@
                 }
             ],
             "description": "Wrapping ticks into a promise",
-            "time": "2017-10-31T21:46:39+00:00"
+            "time": "2018-04-05T12:36:50+00:00"
         },
         {
             "name": "zendframework/zend-hydrator",
