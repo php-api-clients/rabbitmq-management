@@ -332,7 +332,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-jan Kiewiet",
+                    "name": "Cees-Jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -2310,7 +2310,7 @@
             ],
             "authors": [
                 {
-                    "name": "Cees-jan Kiewiet",
+                    "name": "Cees-Jan Kiewiet",
                     "email": "ceesjank@gmail.com"
                 }
             ],
@@ -4697,16 +4697,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.4.0",
+            "version": "v3.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "ca20b8f9ef149f40ff656d52965f240d85f7a8e4"
+                "reference": "d1cdd46c53c264a2bd42505bd0e8ce21423bd0e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/ca20b8f9ef149f40ff656d52965f240d85f7a8e4",
-                "reference": "ca20b8f9ef149f40ff656d52965f240d85f7a8e4",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/d1cdd46c53c264a2bd42505bd0e8ce21423bd0e2",
+                "reference": "d1cdd46c53c264a2bd42505bd0e8ce21423bd0e2",
                 "shasum": ""
             },
             "require": {
@@ -4756,7 +4756,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-09T14:14:31+00:00"
+            "time": "2019-01-01T18:08:36+00:00"
         },
         {
             "name": "symfony/filesystem",
