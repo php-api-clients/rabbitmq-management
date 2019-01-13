@@ -5,10 +5,10 @@ namespace ApiClients\Client\RabbitMQ\Management;
 
 use ApiClients\Client\RabbitMQ\Management\Resource\OverviewInterface;
 use ApiClients\Foundation\Factory;
+use function Clue\React\Block\await;
 use React\EventLoop\Factory as LoopFactory;
 use React\EventLoop\LoopInterface;
 use Rx\React\Promise;
-use function Clue\React\Block\await;
 
 final class Client implements ClientInterface
 {
