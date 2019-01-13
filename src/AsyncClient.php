@@ -7,15 +7,15 @@ use ApiClients\Foundation\ClientInterface as FoundationClientInterface;
 use ApiClients\Foundation\Factory;
 use ApiClients\Foundation\Hydrator\CommandBus\Command\HydrateCommand;
 use ApiClients\Foundation\Transport\CommandBus\Command\SimpleRequestCommand;
+use function ApiClients\Tools\Rx\observableFromArray;
 use Psr\Http\Message\ResponseInterface;
 use React\EventLoop\LoopInterface;
 use React\Promise\PromiseInterface;
+use function React\Promise\resolve;
 use Rx\Observable;
 use Rx\ObservableInterface;
 use Rx\React\Promise;
 use Rx\Scheduler\EventLoopScheduler;
-use function ApiClients\Tools\Rx\observableFromArray;
-use function React\Promise\resolve;
 
 final class AsyncClient implements AsyncClientInterface
 {
