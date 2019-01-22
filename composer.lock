@@ -100,16 +100,16 @@
         },
         {
             "name": "api-clients/foundation",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/foundation.git",
-                "reference": "5b995c539a2087333cf7413a12963058c37e6ee5"
+                "reference": "410a25f794be38cd9b02bf870f9fdc2caa1b2344"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/foundation/zipball/5b995c539a2087333cf7413a12963058c37e6ee5",
-                "reference": "5b995c539a2087333cf7413a12963058c37e6ee5",
+                "url": "https://api.github.com/repos/php-api-clients/foundation/zipball/410a25f794be38cd9b02bf870f9fdc2caa1b2344",
+                "reference": "410a25f794be38cd9b02bf870f9fdc2caa1b2344",
                 "shasum": ""
             },
             "require": {
@@ -144,7 +144,7 @@
                 }
             ],
             "description": "Foundation for creating synchronous and asynchronous API clients",
-            "time": "2018-05-09T18:52:46+00:00"
+            "time": "2019-01-12T12:15:59+00:00"
         },
         {
             "name": "api-clients/hydrator",
@@ -5037,7 +5037,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
